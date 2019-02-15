@@ -1,0 +1,53 @@
+// Variables
+@import 'variables';
+
+.contacts {
+    background-color: $body-bg; 
+}
+
+.form-btn {
+   text-align: center; 
+}
+
+.input-lg {
+    margin-top: 30px;
+    font-size: 20px !important;
+    text-align: center;
+}
+
+.btn-submit {
+    background-color: #3490dc;
+}
+
+#captcha-wrap{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.captcha-img{
+    width: 200px;
+    height: 86px;
+}
+
+.captcha-refresh{
+    display: block;
+    width: 70px;
+    margin: 0 10px;
+}
+
+.address small{
+    display: block;
+    line-height: 1.5rem;
+}
+
+.validate-error{
+    color: $red;
+}
+
+#contact-mail{
+    color: $green;
+}
+
+iframe{
+    margin: 30px 0;
+}

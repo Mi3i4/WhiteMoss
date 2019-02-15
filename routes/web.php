@@ -18,3 +18,10 @@
 Route::get('/', function(){
     return view('home');
 });
+
+Route::get('/contacts', function(){
+    return view('contacts');
+})->name('contacts');
+
+Route::post('/contactUs', 'ControllerContactUs@ship')
+->name('contactUs');

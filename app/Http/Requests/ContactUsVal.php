@@ -4,6 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
+
 class ContactUsVal extends FormRequest
 {
     /**
@@ -24,10 +25,12 @@ class ContactUsVal extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|max:100',
-            'email' => 'required|max:100|email',
-            'title' => 'required|max:100',
-            'text' => 'required|max:255',
+            'name' => 'required|max:127',
+            'email' => 'required|max:127|email',
+            'title' => 'required|max:63',
+            'text' => 'required|max:1023',
+            //'captcha' => 'required|captcha',
         ];
     }
+
 }
