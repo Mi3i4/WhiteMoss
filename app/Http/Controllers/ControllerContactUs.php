@@ -15,7 +15,7 @@ class ControllerContactUs extends Controller
     
     public function ship(Validator $validator){
         
-        if (!$validator->failedRules){
+        if (!isset($validator->failedRules)){
     
             Mail::to('lmkosenkova1@gmail.com')->cc('nvmoiseikin@gmail.com')
             ->send(new ContactUsMail($validator));
