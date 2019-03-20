@@ -47,7 +47,7 @@
                             Продукция
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Животные</a>
+                            <a class="dropdown-item" href="{{ route('animals') }}">Животные</a>
                             <a class="dropdown-item" href="#">Биоудобрения</a>
                             <a class="dropdown-item" href="#">Комбикорм</a>
                             <a class="dropdown-item" href="#">Обезжириватели</a>
@@ -92,5 +92,19 @@
 <script src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+    $('#refresh').on('click',function(){
+        var captcha = $('img.captcha-img');
+        var config = captcha.data('refresh-config');
+        $.ajax({
+            method: 'GET',
+            url: '/get_captcha/' + config,
+        }).done(function (response) {
+            captcha.prop('src', response);
+            console.log(response);
+        });
+    });
+</script>
 </body>
 </html>

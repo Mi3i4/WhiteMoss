@@ -1,0 +1,38 @@
+// Variables
+@import 'variables';
+
+.products {
+    max-width: 1200px !important;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.animalsHeader{
+    margin-bottom: 25px;
+}
+
+@for $i from 1 through 3 {
+  .animal-slider-#{$i} {
+        background-image: url("/site_img/animal#{$i}.jpg");
+        width: 100%;
+        height: 500px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+      border-radius: 10px;
+    }
+}
+
+.animalDescription{
+    margin-top: 25px;
+    text-align: left;
+}
+
+@media only screen and (max-width: 940px)
+{
+   .products {
+    max-width: 1200px !important;
+    padding: 50px 0 20px;
+    text-align: center;
+} 
+}

@@ -2,16 +2,23 @@
 @import 'variables';
 
 .contacts {
-    background-color: $body-bg; 
+    background-color: $body-bg;
+    max-width: 1000px !important;
 }
 
+.contacts  form{
+  max-width: 600px !important;
+  margin: 0 auto;
+}
+ 
 .form-btn {
    text-align: center; 
 }
 
 .input-lg {
     margin-top: 30px;
-    font-size: 20px !important;
+    font-size: 28px !important;
+    height: 40px !important;
     text-align: center;
 }
 
@@ -22,17 +29,23 @@
 #captcha-wrap{
     margin-left: 0;
     margin-right: 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 .captcha-img{
     width: 200px;
     height: 86px;
+    border-radius: 5px;
 }
 
 .captcha-refresh{
     display: block;
     width: 70px;
-    margin: 0 10px;
+}
+
+.captcha-input{
+   padding: 0 !important;
 }
 
 .address small{
@@ -45,9 +58,27 @@
 }
 
 #contact-mail{
-    color: $green;
+    color: $telephone;
 }
 
 iframe{
     margin: 30px 0;
+}
+
+.contactsHeader2{
+    font-weight: 400;
+}
+
+.contactsHeader{
+    padding-top: 20px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 940px)
+{
+   .contacts {
+    max-width: 1200px !important;
+    padding: 50px 0 20px;
+    text-align: center;
+} 
 }

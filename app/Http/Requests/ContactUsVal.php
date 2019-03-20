@@ -27,9 +27,18 @@ class ContactUsVal extends FormRequest
         return [
             'name' => 'required|max:127',
             'email' => 'required|max:127|email',
-            'title' => 'required|max:63',
             'text' => 'required|max:1023',
-            //'captcha' => 'required|captcha',
+            'captcha' => 'required|captcha',
+        ];
+    }
+    
+    public function messages()
+    {
+        return [
+            'required' => 'Поле обязательно для заполнения',
+            'max'  => 'Максимальная длина :max',
+            'captcha.captcha'  => 'Неверное подтверждение',
+            'email.email' => 'некорректная почта',
         ];
     }
 

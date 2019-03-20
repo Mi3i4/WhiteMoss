@@ -23,5 +23,13 @@ Route::get('/contacts', function(){
     return view('contacts');
 })->name('contacts');
 
+Route::get('/animals', function(){
+    return view('animals');
+})->name('animals');
+
 Route::post('/contactUs', 'ControllerContactUs@ship')
 ->name('contactUs');
+
+Route::get('/get_captcha/{config?}', function (\Mews\Captcha\Captcha $captcha, $config = 'flat') {
+    return $captcha->src("flat");
+});

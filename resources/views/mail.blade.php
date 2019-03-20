@@ -13,10 +13,6 @@
     <div>
         <b>Email:</b> {{ $request->email }}
     </div>
-
-    <div>
-        <b>Тема сообщения:</b> {{ $request->title }}
-    </div>
     <div>
         <b>Текст сообщения:</b> {{ $request->text }}
     </div>
