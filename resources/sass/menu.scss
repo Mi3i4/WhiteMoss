@@ -1,0 +1,71 @@
+// Variables
+@import 'variables';
+
+.navbar{
+    justify-content: space-around !important;
+}
+
+.nav-item-home {
+    min-width: 40px;
+}
+
+.nav-item-about {
+    min-width: 70px;
+}
+
+.nav-item-products {
+    min-width: 128px;
+}
+
+.nav-item-contacts {
+    min-width: 94px;
+}
+
+.adress {
+    min-width: 120px;
+}
+
+.navbar-nav {
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+@media (max-width: 1000px)
+{
+    .navbar-nav{
+        max-width: 230px;
+    } 
+}
+
+@media (min-width: 768px) and (max-width: 820px)
+{
+    .logo{
+        max-width: 210px;
+    } 
+}
+
+
+@media (max-width: 767px)
+{
+    .navbar-toggler, .logo, .adress{
+        width: 45% !important;
+    } 
+    .navbar-toggler {
+        padding: 5 0 !important;
+    }
+}
+
+@media (max-width: 767px)
+{
+    .logo{
+        min-width: 163px !important;
+    } 
+}
+
+@media (max-width: 332px)
+{
+    .navbar-toggler{
+        width: 100% !important;
+    } 
+    
+}

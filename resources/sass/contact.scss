@@ -74,11 +74,34 @@ iframe{
     text-align: center;
 }
 
-@media only screen and (max-width: 940px)
+@media (max-width: 940px)
 {
    .contacts {
     max-width: 1200px !important;
     padding: 50px 0 20px;
     text-align: center;
-} 
+    } 
+}
+
+@media (max-width: 760px)
+{
+    #captcha-wrap{
+        justify-content: space-around;
+    } 
+    
+}
+
+@media (max-width: 304px)
+{
+    .contacts {
+        padding: 120px 0 20px;
+    } 
+}
+
+@media (max-width: 332px)
+{
+    .contacts {
+        padding: 180px 0 20px;
+    } 
+    
 }

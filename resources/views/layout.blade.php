@@ -35,13 +35,13 @@
         <nav class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
             <div class="container_header">
                 <ul class="navbar-nav">
-                    <li class="nav-item" style="font-size: 18px">
+                    <li class="nav-item nav-item-home" style="font-size: 18px">
                         <a style="margin-top: 4px" class="nav-link fa fa-home" href="/"></a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item nav-item-about">
                         <a class="nav-link" href="#">О нас</a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown nav-item-products">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                             Продукция
@@ -54,7 +54,7 @@
                             <a class="dropdown-item" href="#">Оборудование</a>
                         </div>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item nav-item-contacts">
                         <a class="nav-link" href="{{ route('contacts') }}">Контакты</a>
                     </li>
                 </ul>
