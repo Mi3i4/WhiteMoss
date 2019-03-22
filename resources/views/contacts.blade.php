@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container contacts" style="margin-top: 80px">
-    <h2 class='contactsHeader'>Контакты</h2>
+    <h3 class='contactsHeader'>Контакты</h3>
     <h6 class='contactsHeader2'>Если у Вас есть вопросы или предложения, то Вы можете задать их по телефону, отправить сообщение или приехать к нам. </h6>
     
     <hr class="featurette-divider">
@@ -11,14 +11,14 @@
          <h2 id="address">Адрес</h2>
             <label for="address">142530, Московская обл., Павлово-Посадский р-н, г. Электрогорск, пр. Мечникова, д. 2</label>
             <label><b>Телефоны</b></label>
-            <label><span id="contact-mail">+7 (49643)-32-132 +7 (49643)-31-692 +7 (49643)-31-939</span></label>
+            <span id="contact-mail">+7 (49643)-32-132</span> <span id="contact-mail">+7 (49643)-31-692</span> <span id="contact-mail">+7 (49643)-31-939</span><br>
             <label><b>Почта</b> <span id="contact-mail"> bel.mox@mail.ru belmox@mail.ru</span></label>
     </form>
     
     <hr class="featurette-divider">
      
     <form action="/contactUs" method="post" role="form">
-        <h2 id="message">Сообщение</h2>
+        <h3 id="message">Сообщение</h3>
         @csrf
         <div class="form-group">
             <label for="name"><b>Имя</b></label>
@@ -52,7 +52,7 @@
     <hr class="featurette-divider">
     
     <div role="form">
-        <h2 id="map">Карта</h2>
+        <h3 id="map">Карта</h3>
         <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A69e9466c04758397e7d98188dfa72b5dce89bb5f434e97bc5cca8ba816b71060&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
     </div>
 </div>

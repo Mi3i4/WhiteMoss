@@ -10551,6 +10551,10 @@ a.text-dark:focus {
   color: #88ad96;
 }
 
+.address span {
+  display: inline-block;
+}
+
 iframe {
   margin: 30px 0;
 }
@@ -10839,7 +10843,8 @@ iframe {
 
 .partners .photoPartners {
   margin: 10px auto;
-  width: 450px;
+  max-width: 450px;
+  width: 100%;
 }
 
 .partners h2 {
@@ -10861,6 +10866,11 @@ partnersHeader {
   .about,
   .partners {
     text-align: center;
+  }
+
+  .about .pDescription,
+  .partners .pDescription {
+    text-align: left;
   }
 }
 
