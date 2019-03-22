@@ -3,7 +3,7 @@
 @section('content')
 <div class="container products" style="margin-top: 80px">
     <h2 class='productsHeader'>Оборудование</h2>
-    <div class="carousel slide myCarousel" data-ride="carousel">
+    <div  id="myCarousel" class="carousel slide myCarousel" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>

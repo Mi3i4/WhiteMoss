@@ -10559,6 +10559,11 @@ iframe {
   font-weight: 400;
 }
 
+#map {
+  max-width: 600px;
+  margin: 10px auto 0;
+}
+
 .contactsHeader {
   padding-top: 20px;
   text-align: center;
@@ -10595,7 +10600,7 @@ iframe {
 .animal-slider-1 {
   background-image: url("/site_img/animal1.jpg");
   width: 66%;
-  height: 500px;
+  height: 350px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -10605,7 +10610,7 @@ iframe {
 .animal-slider-2 {
   background-image: url("/site_img/animal2.jpg");
   width: 66%;
-  height: 500px;
+  height: 350px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -10615,7 +10620,7 @@ iframe {
 .animal-slider-3 {
   background-image: url("/site_img/animal3.jpg");
   width: 66%;
-  height: 500px;
+  height: 350px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -10625,7 +10630,7 @@ iframe {
 .fertilizer-slider-1 {
   background-image: url("/site_img/fertilizer1.jpg");
   width: 66%;
-  height: 500px;
+  height: 350px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -10635,7 +10640,7 @@ iframe {
 .fertilizer-slider-2 {
   background-image: url("/site_img/fertilizer2.jpg");
   width: 66%;
-  height: 500px;
+  height: 350px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -10645,7 +10650,7 @@ iframe {
 .fertilizer-slider-3 {
   background-image: url("/site_img/fertilizer3.jpg");
   width: 66%;
-  height: 500px;
+  height: 350px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -10655,7 +10660,7 @@ iframe {
 .equipment-slider-1 {
   background-image: url("/site_img/equipment1.jpg");
   width: 66%;
-  height: 500px;
+  height: 350px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -10665,7 +10670,7 @@ iframe {
 .equipment-slider-2 {
   background-image: url("/site_img/equipment2.jpg");
   width: 66%;
-  height: 500px;
+  height: 350px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -10675,7 +10680,7 @@ iframe {
 .equipment-slider-3 {
   background-image: url("/site_img/equipment3.jpg");
   width: 66%;
-  height: 500px;
+  height: 350px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -10807,6 +10812,13 @@ iframe {
   }
 }
 
+@media (max-width: 500px) {
+  .navbar-nav {
+    width: 80% !important;
+    margin: 10px 9% !important;
+  }
+}
+
 @media (max-width: 332px) {
   .navbar-toggler {
     width: 100% !important;
@@ -10852,6 +10864,12 @@ partnersHeader {
   }
 }
 
+@media (max-width: 640px) {
+  .logoAbout {
+    width: 250px;
+  }
+}
+
 .container {
   margin: 0 auto !important;
 }
@@ -10872,5 +10890,28 @@ main {
 
 h4 {
   font-size: 20px !important;
+}
+
+@media (max-width: 767px) {
+  main {
+    padding-top: 0 !important;
+  }
+}
+
+@media (max-width: 640px) {
+  img {
+    width: 90% !important;
+    height: auto !important;
+    margin: 10px auto !important;
+    display: block;
+  }
+
+  .slide .carousel-caption h1 {
+    font-size: 1.7rem;
+  }
+
+  .slide .carousel-caption p {
+    font-size: 0.9rem;
+  }
 }
 

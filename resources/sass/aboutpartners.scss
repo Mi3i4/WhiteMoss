@@ -38,3 +38,10 @@
         text-align: center;
     } 
 }
+
+@media (max-width: 640px)
+{ 
+    .logoAbout{
+        width: 250px;
+    }
+}

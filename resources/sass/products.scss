@@ -20,7 +20,7 @@
   .animal-slider-#{$i} {
         background-image: url("/site_img/animal#{$i}.jpg");
         width: 66%;
-        height: 500px;
+        height: 350px;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
@@ -32,7 +32,7 @@
   .fertilizer-slider-#{$i} {
         background-image: url("/site_img/fertilizer#{$i}.jpg");
         width: 66%;
-        height: 500px;
+        height: 350px;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
@@ -44,7 +44,7 @@
   .equipment-slider-#{$i} {
         background-image: url("/site_img/equipment#{$i}.jpg");
         width: 66%;
-        height: 500px;
+        height: 350px;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;

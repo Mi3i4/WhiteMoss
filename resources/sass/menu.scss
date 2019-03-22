@@ -112,6 +112,15 @@
     
 }
 
+@media (max-width: 500px)
+{
+    .navbar-nav{
+        width: 80% !important;
+        margin: 10px 9% !important; 
+    } 
+    
+}
+
 @media (max-width: 332px)
 {
     .navbar-toggler{
