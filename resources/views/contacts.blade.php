@@ -7,8 +7,18 @@
     
     <hr class="featurette-divider">
     
+     <form class="form-group address" role="form">
+         <h2 id="address">Адрес</h2>
+            <label for="address">142530, Московская обл., Павлово-Посадский р-н, г. Электрогорск, пр. Мечникова, д. 2</label>
+            <label><b>Телефоны</b></label>
+            <label><span id="contact-mail">+7 (49643)-32-132 +7 (49643)-31-692 +7 (49643)-31-939</span></label>
+            <label><b>Почта</b> <span id="contact-mail"> bel.mox@mail.ru belmox@mail.ru</span></label>
+    </form>
+    
+    <hr class="featurette-divider">
+     
     <form action="/contactUs" method="post" role="form">
-        <input type="text" class="form-control input-lg" id="message" name="message" disabled placeholder="Сообщение">
+        <h2 id="message">Сообщение</h2>
         @csrf
         <div class="form-group">
             <label for="name"><b>Имя</b></label>
@@ -36,22 +46,13 @@
         </div>
         <div class="form-group form-btn">
           <button type="submit" class="btn btn-submit">Отправить</button>
-        </div>
-        
-        <hr class="featurette-divider">
-        
-        <div class="form-group address">
-            <input type="text" class="form-control input-lg" id="address" name="address" disabled placeholder="Адрес">
-            <label for="address">142530, Московская обл., Павлово-Посадский р-н, г. Электрогорск, пр. Мечникова, д. 2</label>
-            <label><b>Телефоны</b></label>
-            <label><span id="contact-mail">+7 (49643)-32-132 +7 (49643)-31-692 +7 (49643)-31-939</span></label>
-            <label><b>Почта</b> <span id="contact-mail"> bel.mox@mail.ru belmox@mail.ru</span></label>
-        </div>
-        
-        <hr class="featurette-divider">
+        </div>    
     </form>
+    
+    <hr class="featurette-divider">
+    
     <div role="form">
-         <input type="text" class="form-control input-lg" id="map" name="map" disabled placeholder="Карта">
+        <h2 id="map">Карта</h2>
         <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A69e9466c04758397e7d98188dfa72b5dce89bb5f434e97bc5cca8ba816b71060&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
     </div>
 </div>

@@ -22,12 +22,40 @@
 }
 
 .adress {
-    min-width: 120px;
+    min-width: 150px;
+}
+
+.logo-mobile{
+    display: none !important;
+}
+
+.logo-mobile h5{
+     text-align: center;
+    margin-top: 0 !important;
+}
+
+.logo-mobile .svg_center{
+    width: 140px;
+    margin: 0 auto;
+    display: block;
 }
 
 .navbar-nav {
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+.navbar-toggler-icon{
+   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+.navbar-toggler{
+    padding: 4px 0 !important;
+    border: 1px solid rgba(0, 0, 0, 0.5) !important;
+}
+
+#navbarCollapse .nav-item a{
+    text-align: center;
 }
 
 @media (max-width: 1000px)
@@ -47,11 +75,17 @@
 
 @media (max-width: 767px)
 {
-    .navbar-toggler, .logo, .adress{
-        width: 45% !important;
+    .navbar-toggler, .logo, .adress, .navbar-nav{
+        width: 49% !important;
     } 
     .navbar-toggler {
         padding: 5 0 !important;
+    }
+    .navbar-nav{
+        max-width: none;
+    } 
+    .navbar{
+        position: static !important;
     }
 }
 
@@ -60,6 +94,22 @@
     .logo{
         min-width: 163px !important;
     } 
+}
+
+@media (max-width: 640px)
+{
+    .logo-mobile{
+        display: block !important;
+
+    } 
+    .logo-desctop{
+        display: none !important;
+    } 
+    .navbar-toggler, .logo, .navbar-nav{
+        width: 50% !important;
+        margin: 10px 25% !important; 
+    } 
+    
 }
 
 @media (max-width: 332px)

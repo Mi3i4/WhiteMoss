@@ -12,7 +12,20 @@
 @import 'contact.scss';
 @import 'products.scss';
 @import 'menu.scss';
-    
+@import 'aboutpartners.scss';
+ 
+.container{
+    margin: 0 auto !important;
+}
+
+.marketing{
+    padding-bottom: 80px;
+}
+
+main{
+    min-height: 100vh;
+    margin-bottom: -60px;
+}
 .navbar-laravel {
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);

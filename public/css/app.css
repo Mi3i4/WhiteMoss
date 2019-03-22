@@ -10493,6 +10493,7 @@ a.text-dark:focus {
 .contacts {
   background-color: #fff;
   max-width: 1000px !important;
+  padding-bottom: 80px;
 }
 
 .contacts form {
@@ -10566,7 +10567,6 @@ iframe {
 @media (max-width: 940px) {
   .contacts {
     max-width: 1200px !important;
-    padding: 50px 0 20px;
     text-align: center;
   }
 }
@@ -10577,31 +10577,24 @@ iframe {
   }
 }
 
-@media (max-width: 304px) {
-  .contacts {
-    padding: 120px 0 20px;
-  }
-}
-
-@media (max-width: 332px) {
-  .contacts {
-    padding: 180px 0 20px;
-  }
-}
-
 .products {
   max-width: 1200px !important;
-  padding: 20px 0;
+  padding: 20px 0 80px;
   text-align: center;
 }
 
-.animalsHeader {
+.productsHeader {
   margin-bottom: 25px;
+}
+
+.myCarousel {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .animal-slider-1 {
   background-image: url("/site_img/animal1.jpg");
-  width: 100%;
+  width: 66%;
   height: 500px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -10611,7 +10604,7 @@ iframe {
 
 .animal-slider-2 {
   background-image: url("/site_img/animal2.jpg");
-  width: 100%;
+  width: 66%;
   height: 500px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -10621,7 +10614,7 @@ iframe {
 
 .animal-slider-3 {
   background-image: url("/site_img/animal3.jpg");
-  width: 100%;
+  width: 66%;
   height: 500px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -10629,27 +10622,75 @@ iframe {
   border-radius: 10px;
 }
 
-.animalDescription {
+.fertilizer-slider-1 {
+  background-image: url("/site_img/fertilizer1.jpg");
+  width: 66%;
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 10px;
+}
+
+.fertilizer-slider-2 {
+  background-image: url("/site_img/fertilizer2.jpg");
+  width: 66%;
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 10px;
+}
+
+.fertilizer-slider-3 {
+  background-image: url("/site_img/fertilizer3.jpg");
+  width: 66%;
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 10px;
+}
+
+.equipment-slider-1 {
+  background-image: url("/site_img/equipment1.jpg");
+  width: 66%;
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 10px;
+}
+
+.equipment-slider-2 {
+  background-image: url("/site_img/equipment2.jpg");
+  width: 66%;
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 10px;
+}
+
+.equipment-slider-3 {
+  background-image: url("/site_img/equipment3.jpg");
+  width: 66%;
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 10px;
+}
+
+.description {
   margin-top: 25px;
   text-align: left;
+  text-indent: 25px;
 }
 
 @media (max-width: 940px) {
   .products {
-    padding: 50px 0 20px;
     text-align: center;
-  }
-}
-
-@media (max-width: 304px) {
-  .products {
-    padding: 120px 0 20px;
-  }
-}
-
-@media (max-width: 332px) {
-  .products {
-    padding: 180px 0 20px;
   }
 }
 
@@ -10674,12 +10715,40 @@ iframe {
 }
 
 .adress {
-  min-width: 120px;
+  min-width: 150px;
+}
+
+.logo-mobile {
+  display: none !important;
+}
+
+.logo-mobile h5 {
+  text-align: center;
+  margin-top: 0 !important;
+}
+
+.logo-mobile .svg_center {
+  width: 140px;
+  margin: 0 auto;
+  display: block;
 }
 
 .navbar-nav {
   flex-wrap: wrap;
   justify-content: space-around;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+.navbar-toggler {
+  padding: 4px 0 !important;
+  border: 1px solid rgba(0, 0, 0, 0.5) !important;
+}
+
+#navbarCollapse .nav-item a {
+  text-align: center;
 }
 
 @media (max-width: 1000px) {
@@ -10697,12 +10766,21 @@ iframe {
 @media (max-width: 767px) {
   .navbar-toggler,
   .logo,
-  .adress {
-    width: 45% !important;
+  .adress,
+  .navbar-nav {
+    width: 49% !important;
   }
 
   .navbar-toggler {
     padding: 5 0 !important;
+  }
+
+  .navbar-nav {
+    max-width: none;
+  }
+
+  .navbar {
+    position: static !important;
   }
 }
 
@@ -10712,10 +10790,79 @@ iframe {
   }
 }
 
+@media (max-width: 640px) {
+  .logo-mobile {
+    display: block !important;
+  }
+
+  .logo-desctop {
+    display: none !important;
+  }
+
+  .navbar-toggler,
+  .logo,
+  .navbar-nav {
+    width: 50% !important;
+    margin: 10px 25% !important;
+  }
+}
+
 @media (max-width: 332px) {
   .navbar-toggler {
     width: 100% !important;
   }
+}
+
+.about {
+  max-width: 1200px !important;
+  padding: 20px 0 80px;
+  text-align: center;
+}
+
+.partners {
+  max-width: 600px !important;
+  padding: 20px 0 80px;
+  text-align: left;
+}
+
+.partners .photoPartners {
+  margin: 10px auto;
+  width: 450px;
+}
+
+.partners h2 {
+  text-align: center;
+}
+
+.aboutHeader,
+partnersHeader {
+  margin-bottom: 25px;
+}
+
+.description {
+  margin-top: 25px;
+  text-align: left;
+  text-indent: 25px;
+}
+
+@media (max-width: 940px) {
+  .about,
+  .partners {
+    text-align: center;
+  }
+}
+
+.container {
+  margin: 0 auto !important;
+}
+
+.marketing {
+  padding-bottom: 80px;
+}
+
+main {
+  min-height: 100vh;
+  margin-bottom: -60px;
 }
 
 .navbar-laravel {

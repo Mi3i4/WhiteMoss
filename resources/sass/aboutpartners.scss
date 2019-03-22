@@ -1,0 +1,40 @@
+// Variables
+@import 'variables';
+
+
+.about{
+    max-width: 1200px !important;
+    padding: 20px 0 80px;
+    text-align: center;
+}
+
+.partners {
+    max-width: 600px !important;
+    padding: 20px 0 80px;
+    text-align: left;
+    .photoPartners{
+        margin: 10px auto;
+        width: 450px;
+    }
+}
+
+.partners h2{
+    text-align: center;
+}
+
+.aboutHeader, partnersHeader{
+    margin-bottom: 25px;
+}
+
+.description{
+    margin-top: 25px;
+    text-align: left;
+    text-indent: 25px;
+}
+
+@media  (max-width: 940px)
+{
+   .about, .partners {
+        text-align: center;
+    } 
+}
