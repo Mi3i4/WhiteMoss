@@ -18,3 +18,36 @@
 Route::get('/', function(){
     return view('home');
 });
+
+Route::get('/partners', function(){
+    return view('partners');
+})->name('partners');
+
+Route::get('/about', function(){
+    return view('about');
+})->name('about');
+
+// Products //
+Route::get('/animals', function(){
+    return view('animals');
+})->name('animals');
+
+Route::get('/equipment', function(){
+    return view('equipment');
+})->name('equipment');
+
+Route::get('/fertilizer', function(){
+    return view('fertilizer');
+})->name('fertilizer');
+
+// Contacts
+Route::post('/contactUs', 'ControllerContactUs@ship')
+->name('contactUs');
+
+Route::get('/contacts', function(){
+    return view('contacts');
+})->name('contacts');
+
+Route::get('/get_captcha/{config?}', function (\Mews\Captcha\Captcha $captcha, $config = 'flat') {
+    return $captcha->src("flat");
+});

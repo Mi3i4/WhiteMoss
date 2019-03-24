@@ -1,0 +1,102 @@
+// Variables
+@import 'variables';
+
+.contacts {
+    background-color: $body-bg;
+    max-width: 1000px !important;
+    padding-bottom: 80px;
+}
+
+.contacts  form{
+  max-width: 600px !important;
+  margin: 0 auto;
+}
+ 
+.form-btn {
+   text-align: center; 
+}
+
+.input-lg {
+    margin-top: 30px;
+    font-size: 28px !important;
+    height: 40px !important;
+    text-align: center;
+}
+
+.btn-submit {
+    background-color: #3490dc;
+}
+
+#captcha-wrap{
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.captcha-img{
+    width: 200px;
+    height: 86px;
+    border-radius: 5px;
+}
+
+.captcha-refresh{
+    display: block;
+    width: 70px;
+}
+
+.captcha-input{
+   padding: 0 !important;
+}
+
+.address small{
+    display: block;
+    line-height: 1.5rem;
+}
+
+.validate-error{
+    color: $red;
+}
+
+#contact-mail{
+    color: $telephone;
+}
+
+.address span{
+   display: inline-block;
+}
+
+iframe{
+    margin: 30px 0;
+}
+
+.contactsHeader2{
+    font-weight: 400;
+}
+
+#map{
+    max-width: 600px;
+    margin: 10px auto 0;
+}
+
+.contactsHeader{
+    padding-top: 20px;
+    text-align: center;
+}
+
+@media (max-width: 940px)
+{
+   .contacts {
+    max-width: 1200px !important;
+    text-align: center;
+    } 
+}
+
+@media (max-width: 760px)
+{
+    #captcha-wrap{
+        justify-content: space-around;
+    } 
+    
+}
+

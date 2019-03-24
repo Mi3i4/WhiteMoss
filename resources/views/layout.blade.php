@@ -11,13 +11,13 @@
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/my.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <title>Document</title>
+    <title>Белый Мох</title>
 </head>
 <body>
 
 <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark suite_menu">
-        <div class="logo">
+        <div class="logo logo-mobile">
             <div>
                 <object class="svg_center" type="image/svg+xml" data="/site_img/logoNormal.svg" width="70px">
                     <img src="/site_img/logoNormal.svg" class="mr-3" alt="logo">
@@ -27,35 +27,46 @@
                 <h5>Питомник Белый мох</h5>
             </div>
         </div>
-
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+        <div class="logo logo-desctop">
+            <div>
+                <object class="svg_center" type="image/svg+xml" data="/site_img/logoNormal.svg" width="70px">
+                    <img src="/site_img/logoNormal.svg" class="mr-3" alt="logo">
+                </object>
+            </div>
+            <div>
+                <h5>Питомник Белый мох</h5>
+            </div>
+        </div>
         <nav class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
             <div class="container_header">
                 <ul class="navbar-nav">
-                    <li class="nav-item" style="font-size: 18px">
-                        <a style="margin-top: 4px" class="nav-link fa fa-home" href="/"></a>
+                    <li class="nav-item nav-item-home" style="font-size: 18px">
+                        <a style="margin-top: 4px" class="nav-link fa fa-home" href="/">
+                        </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">О нас</a>
+                    <li class="nav-item nav-item-about">
+                        <a class="nav-link" href="{{ route('about') }}">О нас</a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown nav-item-products">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                             Продукция
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Животные</a>
-                            <a class="dropdown-item" href="#">Биоудобрения</a>
+                            <a class="dropdown-item" href="{{ route('animals') }}">Животные</a>
+                            <a class="dropdown-item" href="{{ route('fertilizer') }}">Биоудобрения</a>
+                            <a class="dropdown-item" href="{{ route('equipment') }}">Оборудование</a>
                             <a class="dropdown-item" href="#">Комбикорм</a>
                             <a class="dropdown-item" href="#">Обезжириватели</a>
-                            <a class="dropdown-item" href="#">Оборудование</a>
+                            
                         </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Контакты</a>
+                    <li class="nav-item nav-item-contacts">
+                        <a class="nav-link" href="{{ route('contacts') }}">Контакты</a>
                     </li>
                 </ul>
             </div>
@@ -72,9 +83,7 @@
             <a href="mailto:belmox@mail.ru">belmox@mail.ru</a>
         </div>
     </nav>
-
 </header>
-
 <main role="main">
 
     @yield('content')
@@ -92,5 +101,19 @@
 <script src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+    $('#refresh').on('click',function(){
+        var captcha = $('img.captcha-img');
+        var config = captcha.data('refresh-config');
+        $.ajax({
+            method: 'GET',
+            url: '/get_captcha/' + config,
+        }).done(function (response) {
+            captcha.prop('src', response);
+            console.log(response);
+        });
+    });
+</script>
 </body>
 </html>
