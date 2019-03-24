@@ -8,9 +8,9 @@
     <hr class="featurette-divider">
     
      <form class="form-group address" role="form">
-         <h2 id="address">Адрес</h2>
+         <h3 id="address">Адрес</h3>
             <label for="address">142530, Московская обл., Павлово-Посадский р-н, г. Электрогорск, пр. Мечникова, д. 2</label>
-            <label><b>Телефоны</b></label>
+            <label class="telephoneHeader"><b>Телефоны</b></label>
             <span id="contact-mail">+7 (49643)-32-132</span> <span id="contact-mail">+7 (49643)-31-692</span> <span id="contact-mail">+7 (49643)-31-939</span><br>
             <label><b>Почта</b> <span id="contact-mail"> bel.mox@mail.ru belmox@mail.ru</span></label>
     </form>

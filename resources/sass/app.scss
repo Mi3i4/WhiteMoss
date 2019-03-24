@@ -45,12 +45,18 @@ h4 {
 
 @media (max-width: 640px)
 {
-    img{
-        width: 90% !important;
+    .img{
         height: auto !important;
+        width: 80vw !important;  
         margin: 10px auto !important;
         display: block;
     }
+    
+    .circle{
+        display: block;
+        margin: 10px auto !important;
+    }
+    
     .slide .carousel-caption{
         h1{
             font-size: 1.7rem;

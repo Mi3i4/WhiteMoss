@@ -4,7 +4,7 @@
 <div class="container partners" style="margin-top: 80px">
     <h2 class='partnersHeader'>Партнеры</h2>
     <div class="photoPartners">
-            <img src="/site_img/partners.jpg" width="100%" height="auto">
+            <img src="/site_img/partners.jpg img" width="100%" height="auto">
     </div>
     <ol class='pDescription'>
         <li>ФГБНУ «ФНЦИРИП им. М.П. Чумакова РАН»</li>

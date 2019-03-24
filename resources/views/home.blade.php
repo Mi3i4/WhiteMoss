@@ -117,7 +117,7 @@
                 </p>
             </div>
             <div class="col-md-5">
-                <img src="/site_img/krol.jpg" class="featured_img">
+                <img src="/site_img/krol.jpg" class="featured_img img">
             </div>
         </div>
 
@@ -134,7 +134,7 @@
                 </p>
             </div>
             <div class="col-md-5 order-md-1">
-                <img src="/site_img/bio.jpg" class="featured_img">
+                <img src="/site_img/bio.jpg" class="featured_img img">
             </div>
         </div>
 
@@ -151,7 +151,7 @@
                 </p>
             </div>
             <div class="col-md-5">
-                <img src="/site_img/ferma.jpg" class="featured_img">
+                <img src="/site_img/ferma.jpg" class="featured_img img">
             </div>
         </div>
         <hr class="featurette-divider">
