@@ -77,7 +77,7 @@
         </a>
     </div>
 
-    <div class="container marketing" style="margin-top: 50px">
+    <div class="container marketing">
 
         <div class="row justify-content-center">
             <div class="col-lg-4 justify-content-center">
