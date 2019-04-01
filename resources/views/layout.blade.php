@@ -97,23 +97,13 @@
     </div>
 </footer>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script>
-    $('#refresh').on('click',function(){
-        var captcha = $('img.captcha-img');
-        var config = captcha.data('refresh-config');
-        $.ajax({
-            method: 'GET',
-            url: '/get_captcha/' + config,
-        }).done(function (response) {
-            captcha.prop('src', response);
-            console.log(response);
-        });
-    });
-</script>
+    @yield('recaptcha')
+    @yield('popUp')
 </body>
+      
 </html>

@@ -84,7 +84,7 @@
                 <img src="/site_img/exhib.jpg" class="circle">
                 <h2>Выставки</h2>
                 <p>Мы показываем вам чего мы достигли. А так же какие новые продукты вас ждут. К тому же всегда приятно встретиться вновь.</p>
-                <p><a class="btn btn-secondary" href="#" role="button">Подробнее &raquo;</a></p>
+                <p><a class="btn btn-secondary" href="{{ route('exhibitions') }}" role="button">Подробнее &raquo;</a></p>
             </div>
             <div class="col-lg-4">
                 <img src="/site_img/partners.jpg" class="circle">
@@ -98,7 +98,7 @@
                 <h2>Наши сертификаты</h2>
                 <p>Мы выдаем сертификаты на всю нашу продукцию. Лицензирование производится по всем нормам и
                     стандартам.</p>
-                <p><a class="btn btn-secondary" href="#" role="button">Подробнее &raquo;</a></p>
+                <p><a class="btn btn-secondary" href="{{ route('certificates') }}" role="button">Подробнее &raquo;</a></p>
             </div>
         </div>
 

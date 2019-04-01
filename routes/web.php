@@ -15,6 +15,11 @@
 //    return view('welcome');
 //});
 
+Route::get('/about', function(){
+    return view('about');
+})->name('about');
+
+/* home and on home */
 Route::get('/', function(){
     return view('home');
 });
@@ -23,9 +28,14 @@ Route::get('/partners', function(){
     return view('partners');
 })->name('partners');
 
-Route::get('/about', function(){
-    return view('about');
-})->name('about');
+Route::get('/exhibitions', function(){
+    return view('exhibitions');
+})->name('exhibitions');
+
+Route::get('/certificates', function(){
+    return view('certificates');
+})->name('certificates');
+
 
 // Products //
 Route::get('/animals', function(){
