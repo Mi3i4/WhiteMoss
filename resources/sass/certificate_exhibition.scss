@@ -44,12 +44,12 @@
 
 #certificatePhoto {
     top: 100px;
-    left: calc(calc(100vw - 620px) / 2);
-    position:fixed;
+    left: 0;
+    position: relative;
     display:none; /* Hides the modal window by default */
     z-index:9999;
-    width: 82vw;
-    max-width: 620px;
+    width: 80vw;
+    max-width: 600px;
     -webkit-box-shadow: 0 8px 6px -6px black;
     -moz-box-shadow: 0 8px 6px -6px black;
     box-shadow: 0 8px 6px -6px black;
@@ -128,9 +128,6 @@
    .certificates, .exhibitions  {
         text-align: center;
     } 
-    #certificatePhoto {
-        left: 9vw;
-    }
     .myClose {
     font-size: 1rem;
     
