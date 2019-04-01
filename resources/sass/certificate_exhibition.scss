@@ -106,7 +106,7 @@
 
 @for $i from 1 through 3 {
   .exhibition-slider-#{$i} {
-        background-image: url("/site_img/exhibition#{$i}.JPG");
+        background-image: url("/site_img/exhibition#{$i}.jpg");
         width: 66%;
         height: 350px;
         background-size: cover;
