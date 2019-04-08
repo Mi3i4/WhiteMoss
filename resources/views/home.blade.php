@@ -35,33 +35,29 @@
             <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
-            <div class="carousel-item active slider_photo_1">
+            <div class="carousel-item active slider_photo" style="background-image: url({{ $data['slider']['pass'][0] }});">
                 <div class="container">
                     <div class="carousel-caption">
-                        <h1>Научный центр биомедицинских технологий<br> Федерального медико-биологического агентства</h1>
-                        <p>Питомник находится в экологически чистом районе Московской области.</p>
+                        <h1>{!! $data['slider']['title'][0] !!}</h1>
+                        <p>{{ $data['slider']['text'][0] }}</p>
                         {{--<p><a class="btn btn-lg btn-primary" href="#" role="button">Заказать</a></p>--}}
                     </div>
                 </div>
             </div>
-            <div class="carousel-item slider_photo_2">
+            <div class="carousel-item slider_photo" style="background-image: url({{ $data['slider']['pass'][1] }});">
                 <div class="container">
                     <div class="carousel-caption">
-                        <h1>Биоудобрения</h1>
-                        <p>Масса биогумуса имеет хорошее структурное состояние. Когда она попадает в почву, даже если
-                            почва глинистая плотная, тяжелого механического состава, происходит ее ускоренное
-                            оструктуривание, это очень важно.</p>
+                        <h1>{!! $data['slider']['title'][1] !!}</h1>
+                        <p>{{ $data['slider']['text'][1] }}</p>
                         {{--<p><a class="btn btn-lg btn-primary" href="#" role="button">Заказать</a></p>--}}
                     </div>
                 </div>
             </div>
-            <div class="carousel-item slider_photo_3">
+            <div class="carousel-item slider_photo" style="background-image: url({{ $data['slider']['pass'][2] }});">
                 <div class="container">
                     <div class="carousel-caption">
-                        <h1>Оборудование</h1>
-                        <p>Учитывая много летний опыт разведения кроликов, наше производство отвечает всем требованиям
-                            в кролиководстве. Оборудование изготовленное на нашем предприятии обеспечивает весь цикл
-                            выращивания качественных лабораторных животных.</p>
+                        <h1>{!! $data['slider']['title'][2] !!}</h1>
+                        <p>{{ $data['slider']['text'][2] }}</p>
                         {{--<p><a class="btn btn-lg btn-primary" href="#" role="button">Заказать</a></p>--}}
                     </div>
                 </div>

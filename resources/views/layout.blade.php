@@ -5,12 +5,12 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="{{ asset('/css/normalize.css') }}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
           integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="css/my.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ asset('/css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/my.css') }}">
+     <link rel="stylesheet" href="{{ asset('/css/bootstrap.min.css') }}">
     <title>Белый Мох</title>
 </head>
 <body>
@@ -98,7 +98,7 @@
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+<script src="{{ asset('/js/jquery-ui-1.12.1/jquery-ui.min.js') }}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>

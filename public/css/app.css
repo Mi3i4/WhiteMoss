@@ -10608,6 +10608,15 @@ iframe {
   margin: 0 auto;
 }
 
+.productsSlider {
+  width: 66%;
+  height: 350px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 10px;
+}
+
 .animal-slider-1 {
   background-image: url("/site_img/animal1.jpg");
   width: 66%;
@@ -10698,10 +10707,14 @@ iframe {
   border-radius: 10px;
 }
 
-.description {
-  margin-top: 25px;
+.productsDescription {
+  margin: 0;
   text-align: left;
   text-indent: 25px;
+}
+
+.productsDescription:first-of-type {
+  margin-top: 45px;
 }
 
 @media (max-width: 940px) {

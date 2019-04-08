@@ -14,15 +14,21 @@
 //Route::get('/', function () {
 //    return view('welcome');
 //});
+ //use \App\Http\Helpers\EditDataJson as EditDataJson;
+//use EditDataJson;
+// create
+Route::get("make/{model}/{controller}", function($model, $controller){
+    EditDataJson::create($model, $controller);
+});
+
+Route::get("products/{productName}", 'ControllerProducts@index');
 
 Route::get('/about', function(){
     return view('about');
 })->name('about');
 
 /* home and on home */
-Route::get('/', function(){
-    return view('home');
-});
+Route::get('/', 'ControllerHome@index');
 
 Route::get('/partners', function(){
     return view('partners');
@@ -61,3 +67,5 @@ Route::get('/contacts', function(){
 Route::get('/get_captcha/{config?}', function (\Mews\Captcha\Captcha $captcha, $config = 'flat') {
     return $captcha->src("flat");
 });
+
+
