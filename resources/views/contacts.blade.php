@@ -2,17 +2,21 @@
 
 @section('content')
 <div class="container contacts" style="margin-top: 80px">
-    <h3 class='contactsHeader'>Контакты</h3>
-    <h6 class='contactsHeader2'>Если у Вас есть вопросы или предложения, то Вы можете задать их по телефону, отправить сообщение или приехать к нам. </h6>
+    <h3 class='contactsHeader'>{{ $page['header'] }}</h3>
+    <h6 class='contactsHeader2'>{{ $page['header2'] }}</h6>
     
     <hr class="featurette-divider">
     
      <form class="form-group address" role="form">
-         <h2 id="address">Адрес</h2>
-            <label for="address">142530, Московская обл., Павлово-Посадский р-н, г. Электрогорск, пр. Мечникова, д. 2</label>
-            <label><b>Телефоны</b></label>
-            <span id="contact-mail">+7 (49643)-32-132</span> <span id="contact-mail">+7 (49643)-31-692</span> <span id="contact-mail">+7 (49643)-31-939</span><br>
-            <label><b>Почта</b> <span id="contact-mail"> bel.mox@mail.ru belmox@mail.ru</span></label>
+            <h3 id="address">Адрес</h3>
+            <label for="address">{{ $page['address'] }}</label>
+            <label class="telephoneHeader"><b>Телефоны</b></label>
+            <span id="contact-mail"></span> <span id="contact-mail">{{ $header_footer['header']['tel'][0] }}</span>
+            <span id="contact-mail">{{ $header_footer['header']['tel'][1] }}</span><br>
+            <label>
+                <b>Почта </b> 
+                <span id="contact-mail"> {{ $header_footer['header']['email'][0] }} {{ $header_footer['header']['email'][1] }}</span>
+            </label>
     </form>
     
     <hr class="featurette-divider">
@@ -57,3 +61,19 @@
     </div>
 </div>
 @endsection('content')
+
+@section('recaptcha')
+<script>
+    $('#refresh').on('click',function(){
+        var captcha = $('img.captcha-img');
+        var config = captcha.data('refresh-config');
+        $.ajax({
+            method: 'GET',
+            url: '/get_captcha/' + config,
+        }).done(function (response) {
+            captcha.prop('src', response);
+            console.log(response);
+        });
+    });
+</script>
+@endsection('recaptcha')

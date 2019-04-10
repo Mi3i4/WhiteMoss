@@ -14,40 +14,36 @@
 //Route::get('/', function () {
 //    return view('welcome');
 //});
+ //use \App\Http\Helpers\EditDataJson as EditDataJson;
+//use EditDataJson;
+// create
 
-Route::get('/', function(){
-    return view('home');
-});
+Route::get("products/{productName}", 'ControllerProducts@index');
 
-Route::get('/partners', function(){
-    return view('partners');
-})->name('partners');
+Route::get('/about', 'ControllerAbout@index' )->name('about');
 
-Route::get('/about', function(){
-    return view('about');
-})->name('about');
+/* home and on home */
+Route::get('/', 'ControllerHome@index');
 
-// Products //
-Route::get('/animals', function(){
-    return view('animals');
-})->name('animals');
+Route::get('/partners', 'ControllerPartners@index')->name('partners');
 
-Route::get('/equipment', function(){
-    return view('equipment');
-})->name('equipment');
+Route::get('/exhibitions', 'ControllerExhibitions@index')->name('exhibitions');
 
-Route::get('/fertilizer', function(){
-    return view('fertilizer');
-})->name('fertilizer');
+Route::get('/certificates', 'ControllerCertificates@index')->name('certificates');
+
+/*** служебные 
+Route::get("make/{model}/{controller}", function($model, $controller){
+    EditDataJson::create($model, $controller);
+}); ***/
 
 // Contacts
 Route::post('/contactUs', 'ControllerContactUs@ship')
 ->name('contactUs');
 
-Route::get('/contacts', function(){
-    return view('contacts');
-})->name('contacts');
+Route::get('/contacts', 'ControllerContacts@index')->name('contacts');
 
 Route::get('/get_captcha/{config?}', function (\Mews\Captcha\Captcha $captcha, $config = 'flat') {
     return $captcha->src("flat");
 });
+
+

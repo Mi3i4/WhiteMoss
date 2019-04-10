@@ -10586,6 +10586,13 @@ iframe {
   }
 }
 
+@media (max-width: 530px) {
+  .telephoneHeader {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 .products {
   max-width: 1200px !important;
   padding: 20px 0 80px;
@@ -10599,6 +10606,15 @@ iframe {
 .myCarousel {
   max-width: 800px;
   margin: 0 auto;
+}
+
+.productsSlider {
+  width: 66%;
+  height: 350px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 10px;
 }
 
 .animal-slider-1 {
@@ -10691,10 +10707,14 @@ iframe {
   border-radius: 10px;
 }
 
-.description {
-  margin-top: 25px;
+.productsDescription {
+  margin: 0;
   text-align: left;
   text-indent: 25px;
+}
+
+.productsDescription:first-of-type {
+  margin-top: 45px;
 }
 
 @media (max-width: 940px) {
@@ -10835,20 +10855,33 @@ iframe {
   text-align: center;
 }
 
+.myCarousel {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.partner-slider {
+  width: 66%;
+  height: 350px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 10px;
+}
+
 .partners {
-  max-width: 600px !important;
+  max-width: 800px !important;
   padding: 20px 0 80px;
   text-align: left;
 }
 
-.partners .photoPartners {
-  margin: 10px auto;
-  max-width: 450px;
-  width: 100%;
+.partners .pDescription {
+  margin-top: 25px;
 }
 
 .partners h2 {
   text-align: center;
+  margin-bottom: 25px;
 }
 
 .aboutHeader,
@@ -10880,17 +10913,155 @@ partnersHeader {
   }
 }
 
+.certificates,
+.exhibitions {
+  max-width: 1200px !important;
+  padding: 20px 0 80px;
+  text-align: center;
+}
+
+.certificateHeader,
+.exhibitionHeader {
+  margin-bottom: 25px;
+}
+
+.myCarousel {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.certificate-slider {
+  width: 66%;
+  height: 350px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  border-radius: 10px;
+}
+
+.certificateFull-slider {
+  width: 80vw;
+  max-width: 600px;
+  max-height: 750px;
+  height: 120vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  border-radius: 10px;
+}
+
+#certificatePhoto {
+  top: 100px;
+  left: 0;
+  position: relative;
+  display: none;
+  /* Hides the modal window by default */
+  z-index: 9999;
+  width: 80vw;
+  max-width: 600px;
+  box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
+}
+
+.myClose {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  width: 40px;
+  height: 40px;
+  display: block;
+  padding: 10px;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: arial;
+  font-size: 1.5rem;
+  z-index: 100000;
+}
+
+.myClose:hover {
+  color: red;
+  text-decoration: none;
+}
+
+.shim > * {
+  -webkit-transform: translateZ(0px);
+}
+
+.shim {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  display: none;
+  background: rgba(0, 0, 0, 0.5);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000);
+  /* IE6–IE8 */
+  zoom: 1;
+}
+
+.certificates .carousel-control-prev-icon,
+#certificatePhoto .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.certificates .carousel-control-next-icon,
+#certificatePhoto .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.exhibition-slider {
+  width: 66%;
+  height: 350px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 10px;
+}
+
+.exhibitionDescription {
+  margin-top: 25px;
+  text-align: center;
+  text-indent: 25px;
+}
+
+@media (max-width: 940px) {
+  .certificates,
+  .exhibitions {
+    text-align: center;
+  }
+
+  .myClose {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .myClose {
+    right: 0;
+  }
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
 .container {
   margin: 0 auto !important;
 }
 
 .marketing {
-  padding-bottom: 80px;
+  padding: 30px 0 80px;
 }
 
 main {
   min-height: 100vh;
-  margin-bottom: -60px;
+  margin-bottom: -55px;
 }
 
 .navbar-laravel {
@@ -10909,11 +11080,16 @@ h4 {
 }
 
 @media (max-width: 640px) {
-  img {
-    width: 90% !important;
+  .img {
     height: auto !important;
+    width: 80vw !important;
     margin: 10px auto !important;
     display: block;
+  }
+
+  .circle {
+    display: block;
+    margin: 10px auto !important;
   }
 
   .slide .carousel-caption h1 {

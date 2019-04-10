@@ -5,12 +5,12 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="{{ asset('/css/normalize.css') }}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
           integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="css/my.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ asset('/css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/my.css') }}">
+     <link rel="stylesheet" href="{{ asset('/css/bootstrap.min.css') }}">
     <title>Белый Мох</title>
 </head>
 <body>
@@ -57,12 +57,10 @@
                             Продукция
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="{{ route('animals') }}">Животные</a>
-                            <a class="dropdown-item" href="{{ route('fertilizer') }}">Биоудобрения</a>
-                            <a class="dropdown-item" href="{{ route('equipment') }}">Оборудование</a>
-                            <a class="dropdown-item" href="#">Комбикорм</a>
-                            <a class="dropdown-item" href="#">Обезжириватели</a>
-                            
+                            <a class="dropdown-item" href="/products/animals">Животные</a>
+                            <a class="dropdown-item" href="/products/fertilizer">Биоудобрения</a>
+                            <a class="dropdown-item" href="/products/equipment">Оборудование</a>
+                            <a class="dropdown-item" href="/products/fodder">Комбикорм</a>
                         </div>
                     </li>
                     <li class="nav-item nav-item-contacts">
@@ -74,13 +72,13 @@
         <div class="address">
             <h7>Позвоните нам:</h7><br>
 
-            <a href="+7 (49643)-31-692"> +7 (49643)-31-692</a><br>
-            <a href="+7 (49643)-31-939"> +7 (49643)-31-939</a>
+            <a href="{{ $header_footer['header']['tel'][0] }}">{{ $header_footer['header']['tel'][0] }}</a><br>
+            <a href="{{ $header_footer['header']['tel'][1] }}">{{ $header_footer['header']['tel'][1] }}</a>
         </div>
         <div class="address">
             <h7>Напишите нам:</h7><br>
-            <a href="mailto:bel.mox@mail.ru">bel.mox@mail.ru</a><br>
-            <a href="mailto:belmox@mail.ru">belmox@mail.ru</a>
+            <a href="mailto:{{ $header_footer['header']['email'][0] }}">{{ $header_footer['header']['email'][0] }}</a><br>
+            <a href="mailto:{{ $header_footer['header']['email'][1] }}">{{ $header_footer['header']['email'][1] }}</a>
         </div>
     </nav>
 </header>
@@ -93,27 +91,17 @@
 
 <footer class="footer mt-auto py-3">
     <div class="container">
-        <span class="text-muted">© 2018 ФГБУН НЦБМТ ФМБА России Филиал «Электрогорский» Питомник Белый мох.</span>
+        <span class="text-muted">{{ $header_footer['footer']['text'] }}</span>
     </div>
 </footer>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="{{ asset('/js/jquery-ui-1.12.1/jquery-ui.min.js') }}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script>
-    $('#refresh').on('click',function(){
-        var captcha = $('img.captcha-img');
-        var config = captcha.data('refresh-config');
-        $.ajax({
-            method: 'GET',
-            url: '/get_captcha/' + config,
-        }).done(function (response) {
-            captcha.prop('src', response);
-            console.log(response);
-        });
-    });
-</script>
+    @yield('recaptcha')
+    @yield('popUp')
 </body>
+      
 </html>

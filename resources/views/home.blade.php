@@ -35,33 +35,29 @@
             <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
-            <div class="carousel-item active slider_photo_1">
+            <div class="carousel-item active slider_photo" style="background-image: url({{ $page['slider']['pass'][0] }});">
                 <div class="container">
                     <div class="carousel-caption">
-                        <h1>Научный центр биомедицинских технологий<br> Федерального медико-биологического агентства</h1>
-                        <p>Питомник находится в экологически чистом районе Московской области.</p>
+                        <h1>{!! $page['slider']['title'][0] !!}</h1>
+                        <p>{{ $page['slider']['text'][0] }}</p>
                         {{--<p><a class="btn btn-lg btn-primary" href="#" role="button">Заказать</a></p>--}}
                     </div>
                 </div>
             </div>
-            <div class="carousel-item slider_photo_2">
+            <div class="carousel-item slider_photo" style="background-image: url({{ $page['slider']['pass'][1] }});">
                 <div class="container">
                     <div class="carousel-caption">
-                        <h1>Биоудобрения</h1>
-                        <p>Масса биогумуса имеет хорошее структурное состояние. Когда она попадает в почву, даже если
-                            почва глинистая плотная, тяжелого механического состава, происходит ее ускоренное
-                            оструктуривание, это очень важно.</p>
+                        <h1>{!! $page['slider']['title'][1] !!}</h1>
+                        <p>{{ $page['slider']['text'][1] }}</p>
                         {{--<p><a class="btn btn-lg btn-primary" href="#" role="button">Заказать</a></p>--}}
                     </div>
                 </div>
             </div>
-            <div class="carousel-item slider_photo_3">
+            <div class="carousel-item slider_photo" style="background-image: url({{ $page['slider']['pass'][2] }});">
                 <div class="container">
                     <div class="carousel-caption">
-                        <h1>Оборудование</h1>
-                        <p>Учитывая много летний опыт разведения кроликов, наше производство отвечает всем требованиям
-                            в кролиководстве. Оборудование изготовленное на нашем предприятии обеспечивает весь цикл
-                            выращивания качественных лабораторных животных.</p>
+                        <h1>{!! $page['slider']['title'][2] !!}</h1>
+                        <p>{{ $page['slider']['text'][2] }}</p>
                         {{--<p><a class="btn btn-lg btn-primary" href="#" role="button">Заказать</a></p>--}}
                     </div>
                 </div>
@@ -77,28 +73,26 @@
         </a>
     </div>
 
-    <div class="container marketing" style="margin-top: 50px">
+    <div class="container marketing">
 
         <div class="row justify-content-center">
             <div class="col-lg-4 justify-content-center">
-                <img src="/site_img/exhib.jpg" class="circle">
-                <h2>Выставки</h2>
-                <p>Мы показываем вам чего мы достигли. А так же какие новые продукты вас ждут. К тому же всегда приятно встретиться вновь.</p>
-                <p><a class="btn btn-secondary" href="#" role="button">Подробнее &raquo;</a></p>
+                <img src="{{ $page['marketing']['exhibitions']['img'] }}" class="circle">
+                <h2>{{ $page['marketing']['exhibitions']['title'] }}</h2>
+                <p>{{ $page['marketing']['exhibitions']['text'] }}</p>
+                <p><a class="btn btn-secondary" href="{{ route('exhibitions') }}" role="button">Подробнее &raquo;</a></p>
             </div>
             <div class="col-lg-4">
-                <img src="/site_img/partners.jpg" class="circle">
-                <h2>Наши партнеры</h2>
-                <p>Те, кто работают с нами знают, что наша команда найдет выход из любой ситуации и сделает все точно в
-                    срок.</p>
+                <img src="{{ $page['marketing']['partners']['img'] }}" class="circle">
+                <h2>{{ $page['marketing']['partners']['title'] }}</h2>
+                <p>{{ $page['marketing']['partners']['text'] }}</p>
                 <p><a class="btn btn-secondary" href="{{ route('partners') }}" role="button">Подробнее &raquo;</a></p>
             </div>
             <div class="col-lg-4">
-                <img src="/site_img/permit_new.jpg" class="circle">
-                <h2>Наши сертификаты</h2>
-                <p>Мы выдаем сертификаты на всю нашу продукцию. Лицензирование производится по всем нормам и
-                    стандартам.</p>
-                <p><a class="btn btn-secondary" href="#" role="button">Подробнее &raquo;</a></p>
+                <img src="{{ $page['marketing']['certificates']['img'] }}" class="circle">
+                <h2>{{ $page['marketing']['certificates']['title'] }}</h2>
+                <p>{{ $page['marketing']['certificates']['text'] }}</p>
+                <p><a class="btn btn-secondary" href="{{ route('certificates') }}" role="button">Подробнее &raquo;</a></p>
             </div>
         </div>
 
@@ -107,17 +101,13 @@
 
         <div class="row featurette">
             <div class="col-md-7">
-                <h2 class="featurette-heading">Лабораторные животные</h2>
+                <h2 class="featurette-heading">{{ $page['products']['animals']['title'] }}</h2>
                 <p class="lead">
-                    Мы занимается выращиванием кроликов породы «Советская Шиншилла» более 47-ти лет.
-                    Питомник находится в экологически чистом районе Московской области здесь среди наших полей и озер
-                    содержатся наши лабораторные животные.
-                    Технология применяемая на ферме "Метод внутреннего содержания в больших ангарах». При присмотре
-                    ведущих животноводов и ветеринаров. <a href="{{ route('animals') }}">Подробнее...</a>
+                   {{ $page['products']['animals']['text'] }} <a href="/products/animals">Подробнее...</a>
                 </p>
             </div>
             <div class="col-md-5">
-                <img src="/site_img/krol.jpg" class="featured_img">
+                <img src="{{ $page['products']['animals']['img'] }}" class="featured_img img">
             </div>
         </div>
 
@@ -125,16 +115,13 @@
 
         <div class="row featurette">
             <div class="col-md-7 order-md-2">
-                <h2 class="featurette-heading">Биоудобрения</h2>
+                <h2 class="featurette-heading">{{ $page['products']['fertilizer']['title'] }}</h2>
                 <p class="lead">
-                    Масса биогумуса имеет хорошее структурное состояние.
-                    Когда она попадает в почву, даже если почва глинистая плотная, тяжелого механического состава,
-                    происходит ее ускоренное оструктуривание, это очень важно.
-                    Создается благоприятный водно-воздушный режим для развития корневой системы.<a href="{{ route('fertilizer') }}">Подробнее...</a>
+                    {{ $page['products']['fertilizer']['text'] }}<a href="/products/fertilizer">Подробнее...</a>
                 </p>
             </div>
             <div class="col-md-5 order-md-1">
-                <img src="/site_img/bio.jpg" class="featured_img">
+                <img src="{{ $page['products']['fertilizer']['img'] }}" class="featured_img img">
             </div>
         </div>
 
@@ -142,16 +129,13 @@
 
         <div class="row featurette">
             <div class="col-md-7">
-                <h2 class="featurette-heading">Оборудование</h2>
+                <h2 class="featurette-heading">{{ $page['products']['equipment']['title'] }}</h2>
                 <p class="lead">
-                    Учитывая многолетний опыт разведения кроликов, наше производство отвечает всем требованиям в
-                    кролиководстве.
-                    Оборудование изготовленное на нашем предприятии обеспечивает весь цикл выращивания качественных
-                    лабораторных животных.<a href="{{ route('equipment') }}">Подробнее...</a>
+                    {{ $page['products']['equipment']['text'] }}<a href="/products/equipment">Подробнее...</a>
                 </p>
             </div>
             <div class="col-md-5">
-                <img src="/site_img/ferma.jpg" class="featured_img">
+                <img src="{{ $page['products']['equipment']['img'] }}" class="featured_img img">
             </div>
         </div>
         <hr class="featurette-divider">
