@@ -57,12 +57,10 @@
                             Продукция
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="{{ route('animals') }}">Животные</a>
-                            <a class="dropdown-item" href="{{ route('fertilizer') }}">Биоудобрения</a>
-                            <a class="dropdown-item" href="{{ route('equipment') }}">Оборудование</a>
-                            <a class="dropdown-item" href="#">Комбикорм</a>
-                            <a class="dropdown-item" href="#">Обезжириватели</a>
-                            
+                            <a class="dropdown-item" href="/products/animals">Животные</a>
+                            <a class="dropdown-item" href="/products/fertilizer">Биоудобрения</a>
+                            <a class="dropdown-item" href="/products/equipment">Оборудование</a>
+                            <a class="dropdown-item" href="/products/fodder">Комбикорм</a>
                         </div>
                     </li>
                     <li class="nav-item nav-item-contacts">
@@ -74,13 +72,13 @@
         <div class="address">
             <h7>Позвоните нам:</h7><br>
 
-            <a href="+7 (49643)-31-692"> +7 (49643)-31-692</a><br>
-            <a href="+7 (49643)-31-939"> +7 (49643)-31-939</a>
+            <a href="{{ $header_footer['header']['tel'][0] }}">{{ $header_footer['header']['tel'][0] }}</a><br>
+            <a href="{{ $header_footer['header']['tel'][1] }}">{{ $header_footer['header']['tel'][1] }}</a>
         </div>
         <div class="address">
             <h7>Напишите нам:</h7><br>
-            <a href="mailto:bel.mox@mail.ru">bel.mox@mail.ru</a><br>
-            <a href="mailto:belmox@mail.ru">belmox@mail.ru</a>
+            <a href="mailto:{{ $header_footer['header']['email'][0] }}">{{ $header_footer['header']['email'][0] }}</a><br>
+            <a href="mailto:{{ $header_footer['header']['email'][1] }}">{{ $header_footer['header']['email'][1] }}</a>
         </div>
     </nav>
 </header>
@@ -93,7 +91,7 @@
 
 <footer class="footer mt-auto py-3">
     <div class="container">
-        <span class="text-muted">© 2018 ФГБУН НЦБМТ ФМБА России Филиал «Электрогорский» Питомник Белый мох.</span>
+        <span class="text-muted">{{ $header_footer['footer']['text'] }}</span>
     </div>
 </footer>
 

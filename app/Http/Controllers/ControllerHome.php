@@ -15,10 +15,10 @@ class ControllerHome extends Controller
     /*** $data данные страницы ***/ 
      protected $data; 
     
-     public function index(Home $home)
+    public function index(Home $home)
     {
         $data = $home->show(); 
-        return view('home',  array('data' => $data));
+        return view('home',  array('page' => $data['page'], 'header_footer' => $data['header_footer']));
     }
 
     /**

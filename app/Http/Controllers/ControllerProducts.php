@@ -19,7 +19,7 @@ class ControllerProducts extends Controller
     public function index($productName,Products $products)
     {
         $data = $products->show($productName); 
-        return view('products',  array('data' => $data));
+        return view('products',  array('page' => $data['page'], 'header_footer' => $data['header_footer']));
     }
 
     /**

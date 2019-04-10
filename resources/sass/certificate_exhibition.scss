@@ -16,30 +16,25 @@
     margin: 0 auto;
 }
 
-@for $i from 1 through 2 {
-  .certificate-slider-#{$i} {
-        background-image: url("/site_img/certificate#{$i}.jpg");
-        width: 66%;
-        height: 350px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center top;
-      border-radius: 10px;
-    }
+.certificate-slider {
+    width: 66%;
+    height: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    border-radius: 10px;
 }
 
-@for $i from 1 through 2 {
-  .certificateFull-slider-#{$i} {
-        background-image: url("/site_img/certificate#{$i}.jpg");
-        width: 80vw;
-        max-width: 600px;
-        max-height: 750px;
-        height: 120vw;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center top;
-      border-radius: 10px;
-    }
+
+.certificateFull-slider {
+    width: 80vw;
+    max-width: 600px;
+    max-height: 750px;
+    height: 120vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    border-radius: 10px;
 }
 
 #certificatePhoto {
@@ -104,19 +99,16 @@
     background-image:  url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
 }
 
-@for $i from 1 through 3 {
-  .exhibition-slider-#{$i} {
-        background-image: url("/site_img/exhibition#{$i}.jpg");
-        width: 66%;
-        height: 350px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-      border-radius: 10px;
-    }
+.exhibition-slider {   
+    width: 66%;
+    height: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 10px;
 }
 
-.description{
+.exhibitionDescription{
     margin-top: 25px;
     text-align: center;
     text-indent: 25px;

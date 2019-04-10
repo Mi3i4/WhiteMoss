@@ -9,11 +9,11 @@
             <li data-target="#myCarousel" data-slide-to="1"></li>
         </ol>
         <div class="carousel-inner">
-            <div id='certificate1' class="carousel-item active certificate-slider-1">
+            <div id='certificate1' class="carousel-item active certificate-slider"  style="background-image: url({{ $page['sliderPass'][0] }});">
                 <div class="container">
                 </div>
             </div>
-            <div id='certificate2' class="carousel-item certificate-slider-2">
+            <div id='certificate2' class="carousel-item certificate-slider"  style="background-image: url({{ $page['sliderPass'][1] }});">
                 <div class="container">
                 </div>
             </div>
@@ -27,7 +27,7 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-    <p class='description'>Мы выдаем сертификаты на всю нашу продукцию. Лицензирование производится по всем нормам и стандартам.</p>
+    <p class='exhibitionDescription'>{{ $page['description'] }}</p>
 </div>
 @endsection('content')
 
@@ -36,11 +36,11 @@
     <div id="certificatePhoto" class="carousel slide myCarousel" data-ride="carousel">
          <a href="#" class="myClose">X</a>
         <div class="carousel-inner">
-            <div class="carousel-item certificateFull-slider-1">
+            <div class="carousel-item certificateFull-slider certificateFull-slider-1"  style="background-image: url({{ $page['sliderPass'][0] }});">
                 <div class="container">
                 </div>
             </div>
-            <div class="carousel-item certificateFull-slider-2">
+            <div class="carousel-item certificateFull-slider certificateFull-slider-2"  style="background-image: url({{ $page['sliderPass'][1] }});">
                 <div class="container">
                 </div>
             </div>

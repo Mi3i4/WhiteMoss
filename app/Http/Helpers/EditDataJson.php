@@ -20,7 +20,7 @@ class EditDataJson
     public static function create($modelName, $controllerName)
     {
              Artisan::call("make:model",  ["name" => "Models\\$modelName"]);
-             Artisan::call("make:controller", ["name" => "$controllerName", "--model" => "app\\Models\\$modelName"]);
+             Artisan::call("make:controller", ["name" => "$controllerName", "--model" => "Models\\$modelName"]);
     }
     
     public function readModel($downToPage)

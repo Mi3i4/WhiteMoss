@@ -9,11 +9,19 @@ use Illuminate\Database\Eloquent\Model;
 class Products extends Model
 { 
     
-    protected $dataJson;
+    protected $dataJson, $page, $header_footer;
     
     /*** возвращает данные страницы ***/
     public function show($productName){
+        /*** возвращает данные  внутри страницы ***/
         $this->dataJson = new EditDataJson();
-        return $this->dataJson->readModel(['products', $productName]); 
+        $page =  $this->dataJson->readModel(['products', $productName]);
+        
+        /*** возвращает данные  header & footer ***/
+        $this->dataJson = new EditDataJson();
+        $header_footer =  $this->dataJson->readModel(['header_footer']);
+        
+        /*** Собираем всю page date ***/
+        return ['page' => $page, 'header_footer' => $header_footer];
     }
 }
