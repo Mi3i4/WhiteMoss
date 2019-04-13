@@ -10711,6 +10711,8 @@ iframe {
   margin: 0;
   text-align: left;
   text-indent: 25px;
+  font-size: 1.25rem;
+  font-weight: 300;
 }
 
 .productsDescription:first-of-type {
@@ -10917,7 +10919,6 @@ partnersHeader {
 .exhibitions {
   max-width: 1200px !important;
   padding: 20px 0 80px;
-  text-align: center;
 }
 
 .certificateHeader,
@@ -11025,16 +11026,10 @@ partnersHeader {
 
 .exhibitionDescription {
   margin-top: 25px;
-  text-align: center;
   text-indent: 25px;
 }
 
 @media (max-width: 940px) {
-  .certificates,
-  .exhibitions {
-    text-align: center;
-  }
-
   .myClose {
     font-size: 1rem;
   }
