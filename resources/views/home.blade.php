@@ -117,7 +117,7 @@
             <div class="col-md-7 order-md-2">
                 <h2 class="featurette-heading">{{ $page['products']['fertilizer']['title'] }}</h2>
                 <p class="lead">
-                    {{ $page['products']['fertilizer']['text'] }}<a href="/products/fertilizer">Подробнее...</a>
+                    {{ $page['products']['fertilizer']['text'] }} <a href="/products/fertilizer">Подробнее...</a>
                 </p>
             </div>
             <div class="col-md-5 order-md-1">
@@ -145,7 +145,7 @@
             <div class="col-md-7 order-md-2">
                 <h2 class="featurette-heading">{{ $page['products']['disinfectors']['title'] }}</h2>
                 <p class="lead">
-                    {{ $page['products']['disinfectors']['text'] }}<a href="/products/disinfectors">Подробнее...</a>
+                    {{ $page['products']['disinfectors']['text'] }} <a href="/products/disinfectors">Подробнее...</a>
                 </p>
             </div>
             <div class="col-md-5 order-md-1">
@@ -159,7 +159,7 @@
             <div class="col-md-7">
                 <h2 class="featurette-heading">{{ $page['products']['equipment']['title'] }}</h2>
                 <p class="lead">
-                    {{ $page['products']['equipment']['text'] }}<a href="/products/equipment">Подробнее...</a>
+                    {{ $page['products']['equipment']['text'] }} <a href="/products/equipment">Подробнее...</a>
                 </p>
             </div>
             <div class="col-md-5">
