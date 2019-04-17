@@ -59,8 +59,9 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="/products/animals">Животные</a>
                             <a class="dropdown-item" href="/products/fertilizer">Биоудобрения</a>
-                            <a class="dropdown-item" href="/products/equipment">Оборудование</a>
                             <a class="dropdown-item" href="/products/fodder">Комбикорм</a>
+                            <a class="dropdown-item" href="/products/disinfectors">Дезинфекторы</a>
+                            <a class="dropdown-item" href="/products/equipment">Оборудование</a>
                         </div>
                     </li>
                     <li class="nav-item nav-item-contacts">

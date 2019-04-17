@@ -4,9 +4,7 @@ $('#certificate1').click(function(e) {
 
     e.preventDefault();
     //transition effect
-    $('#certificatePhoto, .shim').fadeIn(500);
-    $('#myCarousel').fadeOut(500);
-    $('.certificateFull-slider-1, .certificate1').addClass( "active" );
+    $('.shim, .certificateFull-1').fadeIn(500);
 
 });
 
@@ -14,17 +12,12 @@ $('#certificate2').click(function(e) {
 
     e.preventDefault();
     //transition effect
-    $('#certificatePhoto, .shim').fadeIn(500);
-    $('#myCarousel').fadeOut(500);
-    $('.certificateFull-slider-2, .certificate2').addClass( "active" );
+   $('.shim, .certificateFull-2').fadeIn(500);
 
 });
 $('.shim .myClose').click(function (e) {
 
     //Cancel the link behavior
     e.preventDefault();
-
-    $('#certificatePhoto, .shim').fadeOut(500);
-    $('#myCarousel').fadeIn(500);
-    $('.certificateFull-slider-1, .certificate1, .certificateFull-slider-2, .certificate2').removeClass( "active" );
+    $('.shim,  .certificateFull-1, .certificateFull-2').fadeOut(500);
 });

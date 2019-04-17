@@ -10615,102 +10615,22 @@ iframe {
   background-repeat: no-repeat;
   background-position: center center;
   border-radius: 10px;
-}
-
-.animal-slider-1 {
-  background-image: url("/site_img/animal1.jpg");
-  width: 66%;
-  height: 350px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  border-radius: 10px;
-}
-
-.animal-slider-2 {
-  background-image: url("/site_img/animal2.jpg");
-  width: 66%;
-  height: 350px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  border-radius: 10px;
-}
-
-.animal-slider-3 {
-  background-image: url("/site_img/animal3.jpg");
-  width: 66%;
-  height: 350px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  border-radius: 10px;
-}
-
-.fertilizer-slider-1 {
-  background-image: url("/site_img/fertilizer1.jpg");
-  width: 66%;
-  height: 350px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  border-radius: 10px;
-}
-
-.fertilizer-slider-2 {
-  background-image: url("/site_img/fertilizer2.jpg");
-  width: 66%;
-  height: 350px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  border-radius: 10px;
-}
-
-.fertilizer-slider-3 {
-  background-image: url("/site_img/fertilizer3.jpg");
-  width: 66%;
-  height: 350px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  border-radius: 10px;
-}
-
-.equipment-slider-1 {
-  background-image: url("/site_img/equipment1.jpg");
-  width: 66%;
-  height: 350px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  border-radius: 10px;
-}
-
-.equipment-slider-2 {
-  background-image: url("/site_img/equipment2.jpg");
-  width: 66%;
-  height: 350px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  border-radius: 10px;
-}
-
-.equipment-slider-3 {
-  background-image: url("/site_img/equipment3.jpg");
-  width: 66%;
-  height: 350px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  border-radius: 10px;
+  margin: 0 auto;
 }
 
 .productsDescription {
   margin: 0;
-  text-align: left;
   text-indent: 25px;
+}
+
+.productsHeaderInDescription {
+  text-align: left;
+  margin: 15px 0;
+}
+
+.productsUlInDescription li,
+.productsDescription {
+  text-align: left;
   font-size: 1.25rem;
   font-weight: 300;
 }
@@ -10879,6 +10799,9 @@ iframe {
 
 .partners .pDescription {
   margin-top: 25px;
+  text-align: left;
+  font-size: 1.25rem;
+  font-weight: 300;
 }
 
 .partners h2 {
@@ -10932,16 +10855,21 @@ partnersHeader {
   margin: 0 auto;
 }
 
-.certificate-slider {
-  width: 66%;
-  height: 350px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center top;
+.certificate-wrap {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.certificate-img {
+  width: 100%;
+  height: auto;
   border-radius: 10px;
 }
 
-.certificateFull-slider {
+.certificateFull-1,
+.certificateFull-2 {
+  margin: 0 auto;
+  display: none;
   width: 80vw;
   max-width: 600px;
   max-height: 750px;
@@ -10950,17 +10878,12 @@ partnersHeader {
   background-repeat: no-repeat;
   background-position: center top;
   border-radius: 10px;
-}
-
-#certificatePhoto {
   top: 100px;
   left: 0;
   position: relative;
   display: none;
   /* Hides the modal window by default */
   z-index: 9999;
-  width: 80vw;
-  max-width: 600px;
   box-shadow: 0 8px 6px -6px black;
   box-shadow: 0 8px 6px -6px black;
 }
@@ -11006,16 +10929,6 @@ partnersHeader {
   zoom: 1;
 }
 
-.certificates .carousel-control-prev-icon,
-#certificatePhoto .carousel-control-prev-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
-}
-
-.certificates .carousel-control-next-icon,
-#certificatePhoto .carousel-control-next-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
-}
-
 .exhibition-slider {
   width: 66%;
   height: 350px;
@@ -11028,6 +10941,9 @@ partnersHeader {
 .exhibitionDescription {
   margin-top: 25px;
   text-indent: 25px;
+  text-align: left;
+  font-size: 1.25rem;
+  font-weight: 300;
 }
 
 @media (max-width: 940px) {
@@ -11063,6 +10979,10 @@ main {
 .navbar-laravel {
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.dropdown-menu a {
+  text-align: left !important;
 }
 
 h4 {

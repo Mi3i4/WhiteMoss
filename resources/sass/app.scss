@@ -36,6 +36,10 @@ main{
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
+.dropdown-menu a{
+    text-align: left !important;
+}
+
 h4 {
     font-size: 20px !important;
 }
