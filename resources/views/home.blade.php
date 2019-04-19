@@ -154,19 +154,6 @@
         </div>
 
         <hr class="featurette-divider">
-
-        <div class="row featurette">
-            <div class="col-md-7">
-                <h2 class="featurette-heading">{{ $page['products']['equipment']['title'] }}</h2>
-                <p class="lead">
-                    {{ $page['products']['equipment']['text'] }} <a href="/products/equipment">Подробнее...</a>
-                </p>
-            </div>
-            <div class="col-md-5">
-                <img src="{{ $page['products']['equipment']['img'] }}" class="featured_img img">
-            </div>
-        </div>
-        <hr class="featurette-divider">
     </div>
 
 @endsection
