@@ -46,6 +46,9 @@
         @if (isset($paragraph['h3']))
             <h3 class='productsHeaderInDescription'>{{ $paragraph['h3'] }}</h3>
         @endif
+        @if (isset($paragraph['h4']))
+            <h4 class='productsHeaderInDescription'>{{ $paragraph['h4'] }}</h3>
+        @endif
         @if (isset($paragraph['ul']))
             <ul class='productsUlInDescription'>
                 @foreach ($paragraph['ul'] as $li)
