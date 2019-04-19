@@ -29,7 +29,6 @@
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-      <a class="link-home" href="{{ route('home') }}"> 
         <a href="{{ route('home') }}" class="logo logo-desctop link-home">
             <div>
                 <img class="svg_center" src="/site_img/mylogo-min.png" width="60px">
@@ -38,7 +37,6 @@
                 <h5>Питомник Белый мох</h5>
             </div>
         </a>
-      </a>
         <nav class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
             <div class="container_header">
                 <ul class="navbar-nav">
