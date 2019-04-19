@@ -10870,6 +10870,11 @@ partnersHeader {
   border-radius: 10px;
 }
 
+.certificate-img:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
 .certificateFull-1,
 .certificateFull-2 {
   margin: 0 auto;
