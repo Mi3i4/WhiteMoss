@@ -21,7 +21,7 @@ Route::get("products/{productName}", 'ControllerProducts@index');
 Route::get('/about', 'ControllerAbout@index' )->name('about');
 
 /*** home and on home ***/
-Route::get('/', 'ControllerHome@index');
+Route::get('/', 'ControllerHome@index')->name('home');
 
 Route::get('/partners', 'ControllerPartners@index')->name('partners');
 

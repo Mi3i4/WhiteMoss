@@ -11,12 +11,17 @@
             <h3 id="address">Адрес</h3>
             <label for="address">{{ $page['address'] }}</label>
             <label class="telephoneHeader"><b>Телефоны</b></label>
-            <span id="contact-mail"></span> <span id="contact-mail">{{ $header_footer['header']['tel'][0] }}</span>
-            <span id="contact-mail">{{ $header_footer['header']['tel'][1] }}</span><br>
-            <label>
-                <b>Почта </b> 
-                <span id="contact-mail"> {{ $header_footer['header']['email'][0] }} {{ $header_footer['header']['email'][1] }}</span>
-            </label>
+            <span class="contact-mail"></span> 
+            <a href="tel:{{ $header_footer['header']['tel'][0] }}" class="contact-mail">{{ $header_footer['header']['tel'][0] }}</a>
+            <a href="tel:{{ $header_footer['header']['tel'][1] }}" class="contact-mail">{{ $header_footer['header']['tel'][1] }}</a><br>
+            <label  class="telephoneHeader"><b>Почта </b></label>
+            <span class="contact-mail"></span>  
+            <a class="contact-mail" href="mailto:{{ $header_footer['header']['tel'][0] }}" id="contact-mail">
+                {{ $header_footer['header']['email'][0] }}
+            </a>
+            <a class="contact-mail" href="mailto:{{ $header_footer['header']['tel'][1] }}" id="contact-mail">
+                 {{ $header_footer['header']['email'][1] }}
+            </a>
     </form>
     
     <hr class="featurette-divider">

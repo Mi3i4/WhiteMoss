@@ -31,17 +31,53 @@ main{
     margin-bottom: -55px;
 }
 
+/* header */
 .navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
-.dropdown-menu a{
-    text-align: left !important;
+.link-home{
+    padding: 0;
+    margin: 0;
+    color: black;
+    &:hover{
+        text-decoration: none;
+        color: rgba(183, 183, 183, 0.75);
+    }
+    & div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    & img{
+        margin-right: 7px;
+    }
+    & h5 { 
+        margin: auto !important;
+        display: inline-block;
+    }
+}
+
+.dropdown{
+    max-width: 160px;
+    margin: auto;
+    &-menu{
+        a {text-align: left !important;}
+        max-width: 160px
+    }
 }
 
 h4 {
     font-size: 20px !important;
+}
+
+/* media */
+@media (min-width: 640px)
+{
+   .dropdown-menu{
+       left: -4px !important;
+    }
 }
 
 @media (max-width: 767px)
@@ -72,5 +108,8 @@ h4 {
         p{
             font-size: 0.9rem;
         }
+    }
+    .link-home div{
+         margin-top: 10px;
     }
 }

@@ -58,11 +58,14 @@
     color: $red;
 }
 
-#contact-mail{
-    color: $telephone;
+.contact-mail{
+    color: $telephone !important;
+    &:hover{
+        color: #1d68a7 !important;
+    }
 }
 
-.address span{
+.address a{
    display: inline-block;
 }
 
