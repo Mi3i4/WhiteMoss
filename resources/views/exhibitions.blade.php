@@ -32,7 +32,10 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-    
-    <p class='exhibitionDescription'>{{ $page['description'] }}</p>
+     @foreach ($page['description'] as $paragraph)
+        @if (isset($paragraph['p']))
+            <p class="productsDescription">{{ $paragraph['p'] }}</p>
+        @endIf
+    @endforeach
 </div>
 @endsection('content')

@@ -42,14 +42,15 @@
     @foreach ($page['description'] as $paragraph)
         @if (isset($paragraph['p']))
             <p class="productsDescription">{{ $paragraph['p'] }}</p>
-        @endif
-        @if (isset($paragraph['h3']))
+        @elseif (isset($paragraph['h3']))
             <h3 class='productsHeaderInDescription'>{{ $paragraph['h3'] }}</h3>
-        @endif
-        @if (isset($paragraph['h4']))
-            <h4 class='productsHeaderInDescription'>{{ $paragraph['h4'] }}</h3>
-        @endif
-        @if (isset($paragraph['ul']))
+        @elseif (isset($paragraph['ol']))
+           <ol class='productsUlInDescription'>
+                @foreach ($paragraph['ol'] as $li)
+                    <li>{{ $li }}</li>
+                @endforeach
+            </ol>
+        @elseif (isset($paragraph['ul']))
             <ul class='productsUlInDescription'>
                 @foreach ($paragraph['ul'] as $li)
                     <li>{{ $li }}</li>
