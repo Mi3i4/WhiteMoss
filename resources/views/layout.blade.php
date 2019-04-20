@@ -16,31 +16,27 @@
 <body>
 
 <header>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark suite_menu">
-        <div class="logo logo-mobile">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark suite_menu"> 
+         <a href="{{ route('home') }}" class="logo logo-mobile link-home">
             <div>
-                <object class="svg_center" type="image/svg+xml" data="/site_img/logoNormal.svg" width="70px">
-                    <img src="/site_img/logoNormal.svg" class="mr-3" alt="logo">
-                </object>
+                <img class="svg_center" src="/site_img/mylogo-min.png" width="60px">
             </div>
             <div>
                 <h5>Питомник Белый мох</h5>
             </div>
-        </div>
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="logo logo-desctop">
+        <a href="{{ route('home') }}" class="logo logo-desctop link-home">
             <div>
-                <object class="svg_center" type="image/svg+xml" data="/site_img/logoNormal.svg" width="70px">
-                    <img src="/site_img/logoNormal.svg" class="mr-3" alt="logo">
-                </object>
+                <img class="svg_center" src="/site_img/mylogo-min.png" width="60px">
             </div>
             <div>
                 <h5>Питомник Белый мох</h5>
             </div>
-        </div>
+        </a>
         <nav class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
             <div class="container_header">
                 <ul class="navbar-nav">
@@ -59,8 +55,9 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="/products/animals">Животные</a>
                             <a class="dropdown-item" href="/products/fertilizer">Биоудобрения</a>
-                            <a class="dropdown-item" href="/products/equipment">Оборудование</a>
                             <a class="dropdown-item" href="/products/fodder">Комбикорм</a>
+                            <a class="dropdown-item" href="/products/disinfectors">Дезинфекторы</a>
+                            {{--<a class="dropdown-item" href="/products/equipment">Оборудование</a>--}}
                         </div>
                     </li>
                     <li class="nav-item nav-item-contacts">
@@ -72,8 +69,8 @@
         <div class="address">
             <h7>Позвоните нам:</h7><br>
 
-            <a href="{{ $header_footer['header']['tel'][0] }}">{{ $header_footer['header']['tel'][0] }}</a><br>
-            <a href="{{ $header_footer['header']['tel'][1] }}">{{ $header_footer['header']['tel'][1] }}</a>
+            <a href="tel:{{ $header_footer['header']['tel'][0] }}">{{ $header_footer['header']['tel'][0] }}</a><br>
+            <a href="tel:{{ $header_footer['header']['tel'][1] }}">{{ $header_footer['header']['tel'][1] }}</a>
         </div>
         <div class="address">
             <h7>Напишите нам:</h7><br>

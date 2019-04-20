@@ -14,16 +14,14 @@
 //Route::get('/', function () {
 //    return view('welcome');
 //});
- //use \App\Http\Helpers\EditDataJson as EditDataJson;
-//use EditDataJson;
-// create
 
+/*** products ***/
 Route::get("products/{productName}", 'ControllerProducts@index');
 
 Route::get('/about', 'ControllerAbout@index' )->name('about');
 
-/* home and on home */
-Route::get('/', 'ControllerHome@index');
+/*** home and on home ***/
+Route::get('/', 'ControllerHome@index')->name('home');
 
 Route::get('/partners', 'ControllerPartners@index')->name('partners');
 
@@ -36,9 +34,8 @@ Route::get("make/{model}/{controller}", function($model, $controller){
     EditDataJson::create($model, $controller);
 }); ***/
 
-// Contacts
-Route::post('/contactUs', 'ControllerContactUs@ship')
-->name('contactUs');
+/*** Contacts ***/
+Route::post('/contactUs', 'ControllerContactUs@ship')->name('contactUs');
 
 Route::get('/contacts', 'ControllerContacts@index')->name('contacts');
 

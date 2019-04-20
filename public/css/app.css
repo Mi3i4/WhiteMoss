@@ -10547,11 +10547,15 @@ a.text-dark:focus {
   color: #e3342f;
 }
 
-#contact-mail {
-  color: #88ad96;
+.contact-mail {
+  color: #88ad96 !important;
 }
 
-.address span {
+.contact-mail:hover {
+  color: #1d68a7 !important;
+}
+
+.address a {
   display: inline-block;
 }
 
@@ -10615,102 +10619,25 @@ iframe {
   background-repeat: no-repeat;
   background-position: center center;
   border-radius: 10px;
-}
-
-.animal-slider-1 {
-  background-image: url("/site_img/animal1.jpg");
-  width: 66%;
-  height: 350px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  border-radius: 10px;
-}
-
-.animal-slider-2 {
-  background-image: url("/site_img/animal2.jpg");
-  width: 66%;
-  height: 350px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  border-radius: 10px;
-}
-
-.animal-slider-3 {
-  background-image: url("/site_img/animal3.jpg");
-  width: 66%;
-  height: 350px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  border-radius: 10px;
-}
-
-.fertilizer-slider-1 {
-  background-image: url("/site_img/fertilizer1.jpg");
-  width: 66%;
-  height: 350px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  border-radius: 10px;
-}
-
-.fertilizer-slider-2 {
-  background-image: url("/site_img/fertilizer2.jpg");
-  width: 66%;
-  height: 350px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  border-radius: 10px;
-}
-
-.fertilizer-slider-3 {
-  background-image: url("/site_img/fertilizer3.jpg");
-  width: 66%;
-  height: 350px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  border-radius: 10px;
-}
-
-.equipment-slider-1 {
-  background-image: url("/site_img/equipment1.jpg");
-  width: 66%;
-  height: 350px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  border-radius: 10px;
-}
-
-.equipment-slider-2 {
-  background-image: url("/site_img/equipment2.jpg");
-  width: 66%;
-  height: 350px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  border-radius: 10px;
-}
-
-.equipment-slider-3 {
-  background-image: url("/site_img/equipment3.jpg");
-  width: 66%;
-  height: 350px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  border-radius: 10px;
+  margin: 0 auto;
 }
 
 .productsDescription {
   margin: 0;
-  text-align: left;
   text-indent: 25px;
+}
+
+.productsHeaderInDescription {
+  text-align: left;
+  margin: 15px 0;
+  font-size: 1.5rem;
+}
+
+.productsUlInDescription li,
+.productsDescription {
+  text-align: left;
+  font-size: 1.25rem;
+  font-weight: 300;
 }
 
 .productsDescription:first-of-type {
@@ -10877,6 +10804,9 @@ iframe {
 
 .partners .pDescription {
   margin-top: 25px;
+  text-align: left;
+  font-size: 1.25rem;
+  font-weight: 300;
 }
 
 .partners h2 {
@@ -10915,14 +10845,14 @@ partnersHeader {
 
 .certificates,
 .exhibitions {
-  max-width: 1200px !important;
+  max-width: 800px !important;
   padding: 20px 0 80px;
-  text-align: center;
 }
 
 .certificateHeader,
 .exhibitionHeader {
   margin-bottom: 25px;
+  text-align: center;
 }
 
 .myCarousel {
@@ -10930,16 +10860,26 @@ partnersHeader {
   margin: 0 auto;
 }
 
-.certificate-slider {
-  width: 66%;
-  height: 350px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center top;
+.certificate-wrap {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.certificate-img {
+  width: 100%;
+  height: auto;
   border-radius: 10px;
 }
 
-.certificateFull-slider {
+.certificate-img:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.certificateFull-1,
+.certificateFull-2 {
+  margin: 0 auto;
+  display: none;
   width: 80vw;
   max-width: 600px;
   max-height: 750px;
@@ -10948,17 +10888,12 @@ partnersHeader {
   background-repeat: no-repeat;
   background-position: center top;
   border-radius: 10px;
-}
-
-#certificatePhoto {
   top: 100px;
   left: 0;
   position: relative;
   display: none;
   /* Hides the modal window by default */
   z-index: 9999;
-  width: 80vw;
-  max-width: 600px;
   box-shadow: 0 8px 6px -6px black;
   box-shadow: 0 8px 6px -6px black;
 }
@@ -10983,6 +10918,7 @@ partnersHeader {
 .myClose:hover {
   color: red;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .shim > * {
@@ -11004,16 +10940,6 @@ partnersHeader {
   zoom: 1;
 }
 
-.certificates .carousel-control-prev-icon,
-#certificatePhoto .carousel-control-prev-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
-}
-
-.certificates .carousel-control-next-icon,
-#certificatePhoto .carousel-control-next-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
-}
-
 .exhibition-slider {
   width: 66%;
   height: 350px;
@@ -11025,16 +10951,13 @@ partnersHeader {
 
 .exhibitionDescription {
   margin-top: 25px;
-  text-align: center;
   text-indent: 25px;
+  text-align: left;
+  font-size: 1.25rem;
+  font-weight: 300;
 }
 
 @media (max-width: 940px) {
-  .certificates,
-  .exhibitions {
-    text-align: center;
-  }
-
   .myClose {
     font-size: 1rem;
   }
@@ -11064,13 +10987,62 @@ main {
   margin-bottom: -55px;
 }
 
+/* header */
+
 .navbar-laravel {
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
+.link-home {
+  padding: 0;
+  margin: 0;
+  color: black;
+}
+
+.link-home:hover {
+  text-decoration: none;
+  color: rgba(183, 183, 183, 0.75);
+}
+
+.link-home div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.link-home img {
+  margin-right: 7px;
+}
+
+.link-home h5 {
+  margin: auto !important;
+  display: inline-block;
+}
+
+.dropdown {
+  max-width: 160px;
+  margin: auto;
+}
+
+.dropdown-menu {
+  max-width: 160px;
+}
+
+.dropdown-menu a {
+  text-align: left !important;
+}
+
 h4 {
   font-size: 20px !important;
+}
+
+/* media */
+
+@media (min-width: 640px) {
+  .dropdown-menu {
+    left: -4px !important;
+  }
 }
 
 @media (max-width: 767px) {
@@ -11098,6 +11070,10 @@ h4 {
 
   .slide .carousel-caption p {
     font-size: 0.9rem;
+  }
+
+  .link-home div {
+    margin-top: 10px;
   }
 }
 

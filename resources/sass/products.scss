@@ -23,48 +23,26 @@
         background-repeat: no-repeat;
         background-position: center center;
         border-radius: 10px;
+        margin: 0 auto;
  }
 
-@for $i from 1 through 3 {
-  .animal-slider-#{$i} {
-        background-image: url("/site_img/animal#{$i}.jpg");
-        width: 66%;
-        height: 350px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-      border-radius: 10px;
-    }
-}
-
-@for $i from 1 through 3 {
-  .fertilizer-slider-#{$i} {
-        background-image: url("/site_img/fertilizer#{$i}.jpg");
-        width: 66%;
-        height: 350px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-      border-radius: 10px;
-    }
-}
-
-@for $i from 1 through 3 {
-  .equipment-slider-#{$i} {
-        background-image: url("/site_img/equipment#{$i}.jpg");
-        width: 66%;
-        height: 350px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-      border-radius: 10px;
-    }
-}
 
 .productsDescription{
     margin: 0;
-    text-align: left;
     text-indent: 25px;
+}
+
+.productsHeaderInDescription{
+    text-align: left;
+    margin: 15px 0;
+    font-size: 1.5rem;
+}
+
+.productsUlInDescription li, 
+.productsDescription{
+    text-align: left;
+    font-size: 1.25rem;
+    font-weight: 300;
 }
 
 .productsDescription:first-of-type{
