@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\ContactUsVal as Validator;
 use Illuminate\Support\Facades\Mail;
+use Exception;
 //use App\Mail\ContactUsMail;
     
 class ControllerContactUs extends Controller
@@ -27,12 +28,9 @@ class ControllerContactUs extends Controller
                 $mail_admin = env('MAIL_ADMIN');
             
                 //$message->from($data['email']);
-                try {
+               
                 $message->to($mail_admin);
-                } catch (Exception $e) {
-                var_dump($e);
-                die('success');
-                }
+            
                 //var_dump($data);
             }); 
             } catch (Exception $e) {
