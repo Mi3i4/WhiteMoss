@@ -22,7 +22,7 @@ class ControllerContactUs extends Controller
         else {
             $data = $validator->all();
         
-            try{
+            try {
             $result = Mail::send('mail', ['data' => $data], function ($message) use ($data) {
                 $mail_admin = env('MAIL_ADMIN');
             
@@ -32,8 +32,9 @@ class ControllerContactUs extends Controller
             
                 //var_dump($data);
             }); 
-            }catch (Exception $e) {
-                dd($e);
+            } catch (Exception $e) {
+                var_dump($e);
+                die('success');
             }
             
         }
