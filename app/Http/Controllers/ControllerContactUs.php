@@ -27,9 +27,12 @@ class ControllerContactUs extends Controller
                 $mail_admin = env('MAIL_ADMIN');
             
                 //$message->from($data['email']);
-            
+                try {
                 $message->to($mail_admin);
-            
+                } catch (Exception $e) {
+                var_dump($e);
+                die('success');
+                }
                 //var_dump($data);
             }); 
             } catch (Exception $e) {
