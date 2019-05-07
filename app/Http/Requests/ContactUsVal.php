@@ -28,7 +28,7 @@ class ContactUsVal extends FormRequest
             'name' => 'required|max:127',
             'email' => 'required|max:127|email',
             'text' => 'required|max:1023',
-            //'captcha' => 'required|captcha',
+            'captcha' => 'required|captcha',
         ];
     }
     
