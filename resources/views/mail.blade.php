@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
    
-    <title>{{ $request->title }}</title>
+    <title></title>
 </head>
 <body>
     <div>
-        <b>Имя:</b> {{ $request->name }}
+        <b>Имя:</b> {{ $data['name'] }}
     </div>
 
     <div>
-        <b>Email:</b> {{ $request->email }}
+        <b>Email:</b> {{ $data['email'] }}
     </div>
     <div>
-        <b>Текст сообщения:</b> {{ $request->text }}
+        <b>Текст сообщения:</b> {{ $data['text'] }}
     </div>
 </body>
