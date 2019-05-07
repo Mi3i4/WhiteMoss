@@ -22,15 +22,20 @@ class ControllerContactUs extends Controller
         else {
             $data = $validator->all();
         
+            try{
             $result = Mail::send('mail', ['data' => $data], function ($message) use ($data) {
                 $mail_admin = env('MAIL_ADMIN');
             
-                $message->from($data['email']);
+                //$message->from($data['email']);
             
                 $message->to($mail_admin);
             
                 //var_dump($data);
             }); 
+            }catch (Exception $e) {
+                dd($e);
+            }
+            
         }
             
                       
