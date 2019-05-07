@@ -29,7 +29,7 @@ class ControllerContactUs extends Controller
             
                 $message->to($mail_admin);
             
-                var_dump($data);
+                //var_dump($data);
             }); 
         }
             
