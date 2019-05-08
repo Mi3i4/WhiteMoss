@@ -29,7 +29,8 @@ class ControllerContactUs extends Controller
                 $mail_admin2 = env('MAIL_ADMIN2');
                 //$message->from($data['email']);
                
-                $message->to($mail_admin)-cc($mail_admin2)->subject('Сообщения с сайта');
+                $message->to($mail_admin)->subject('Сообщения с сайта');
+                $message->to($mail_admin2)->subject('Сообщения с сайта');
             
                 //var_dump($data);
             }); 
