@@ -1,6 +1,10 @@
 @extends('layout')
 
 @section('content')
+    <meta name="google-site-verification" content="4V41ZzqLWG1DKBArZzejfJAH6j5FmvVo7UM_kBpxtaE" />
+@endsection
+
+@section('content')
     {{--<div class="row">--}}
     {{--<div class="col svg_center">--}}
     {{--<object class="logo_back" type="image/svg+xml" data="/site_img/logoNormal.svg" width="170px">--}}
