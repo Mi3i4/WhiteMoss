@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('content')
+@section('robots')
     <meta name="google-site-verification" content="4V41ZzqLWG1DKBArZzejfJAH6j5FmvVo7UM_kBpxtaE" />
 @endsection
 
