@@ -16,10 +16,10 @@
             <a href="tel:{{ $header_footer['header']['tel'][1] }}" class="contact-mail">{{ $header_footer['header']['tel'][1] }}</a><br>
             <label  class="telephoneHeader"><b>Почта </b></label>
             <span class="contact-mail"></span>  
-            <a class="contact-mail" href="mailto:{{ $header_footer['header']['tel'][0] }}" id="contact-mail">
+            <a class="contact-mail" href="mailto:{{ $header_footer['header']['email'][0] }}" id="contact-mail">
                 {{ $header_footer['header']['email'][0] }}
             </a>
-            <a class="contact-mail" href="mailto:{{ $header_footer['header']['tel'][1] }}" id="contact-mail">
+            <a class="contact-mail" href="mailto:{{ $header_footer['header']['email'][1] }}" id="contact-mail">
                  {{ $header_footer['header']['email'][1] }}
             </a>
     </form>
