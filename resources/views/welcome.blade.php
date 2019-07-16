@@ -9,6 +9,5 @@
 </head>
 <body>
 <h1>Hello</h1>
-<h2>hihihi</h2>
 </body>
 </html>
