@@ -1,5 +1,10 @@
 @extends('layout')
 
+@section('robots')
+    <meta name="google-site-verification" content="4V41ZzqLWG1DKBArZzejfJAH6j5FmvVo7UM_kBpxtaE" />
+    <meta name="yandex-verification" content="ed9dac45bf53ae4d" />
+@endsection
+
 @section('content')
     {{--<div class="row">--}}
     {{--<div class="col svg_center">--}}

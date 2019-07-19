@@ -17,11 +17,11 @@ return [
         'width'     => 160,
         'height'    => 46,
         'quality'   => 90,
-        'lines'     => 2,
+        'lines'     => 4,
         'bgImage'   => false,
         'bgColor'   => '#eaf2ef',
         'fontColors'=> ['#88ad96', '#88ad96', '#88ad96', '#88ad96', '#88ad96'],
-        'contrast'  => -5,
+        'contrast'  => -10,
     ],
 
     'mini'   => [
